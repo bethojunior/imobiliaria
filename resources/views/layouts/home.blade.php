@@ -3,6 +3,7 @@
 <script src="{{ asset('js/libs/jquery.js') }}"></script>
 <script src="{{ asset('js/utils/ElementProperty.js') }}"></script>
 <link rel="stylesheet" href="{{ asset('config/main.css') }}">
+<link rel="stylesheet" href="{{ asset('css/fonts/montserrat.css') }}">
 <script src="{{ asset('config/main.js') }}"></script>
 <link rel="stylesheet" href="{{ asset('css/materialize/index.css') }}">
 <link rel="stylesheet" href="{{ asset('css/font-awesome/css/font-awesome.min.css') }}">
