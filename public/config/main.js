@@ -7,10 +7,10 @@ function getEnvironment(){
                 api : 'http://127.0.0.1:8000/api/',
             }
         }, {
-            name: "https://pdv.madgic.com.br/",
+            name: "https://imobiliaria.madgic.com.br/",
             hosts : {
-                web : 'https://pdv.madgic.com.br/',
-                api : 'https://pdv.madgic.com.br/api/',
+                web : 'https://imobiliaria.madgic.com.br/',
+                api : 'https://imobiliaria.madgic.com.br/api/',
             }
         },
 

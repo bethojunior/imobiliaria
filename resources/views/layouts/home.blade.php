@@ -2,6 +2,8 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <script src="{{ asset('js/libs/jquery.js') }}"></script>
 <script src="{{ asset('js/utils/ElementProperty.js') }}"></script>
+<link rel="stylesheet" href="{{ asset('config/main.css') }}">
+<script src="{{ asset('config/main.js') }}"></script>
 <link rel="stylesheet" href="{{ asset('css/materialize/index.css') }}">
 <link rel="stylesheet" href="{{ asset('css/font-awesome/css/font-awesome.min.css') }}">
 <script src="{{ asset('js/libs/jquery.js') }}"></script>
@@ -10,13 +12,13 @@
 <link rel="manifest" href="{{ asset('manifest.json') }}">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="application-name" content="PWA">
-<link rel="icon" sizes="512x512" href="{{ asset('512.png') }}">
+<link rel="icon" sizes="512x512" href="{{ asset('assets/images/logo/logo.png') }}">
 
 <!-- Add to homescreen for Safari on iOS -->
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <meta name="apple-mobile-web-app-title" content="PWA">
-<link rel="apple-touch-icon" href="{{ asset('images/icons/icon-512x512.png') }}">
+<link rel="apple-touch-icon" href="{{ asset('assets/images/logo/logo.png') }}">
 
 <link href="{{ asset('images/icons/splash-640x1136.png') }}" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
 <link href="{{ asset('images/icons/splash-750x1334.png') }}" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
@@ -30,10 +32,23 @@
 <link href="{{ asset('images/icons/splash-2048x2732.png') }}" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
 
 <!-- Tile for Win8 -->
-<meta name="msapplication-TileColor" content="#BA7C8E">
-<meta name="msapplication-TileImage" content="{{ asset('images/icons/icon-512x512.png') }}">
+<meta name="msapplication-TileColor" content="#CB5929">
+<meta name="msapplication-TileImage" content="{{ asset('assets/images/logo/logo.png') }}">
 
 
+<meta charset="utf-8" />
+<meta name="theme-color" content="#CB5929">
+<link rel="icon" href="{{ asset('assets/images/logo/logo.png') }}">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+
+<meta name="description" content="Imobiliária em Juazeiro do Norte - Procurando por um imóvel no Crajubar? Encontre ótimas oportunidades de imóveis para locação em nosso site. Clique e confira!" />
+<meta property="og:title" content="Imobiliária Canuto" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://imobiliaria.madgic.com.br/" />
+<meta property="og:image" content="https://imobiliaria.madgic.com.br/assets/images/logo/logo.png" />
+<meta property="og:description" content="Imobiliária Canuto" />
+<meta property="og:site_name" content="Imobiliária Canuto" />
 
 
 <script src="{{ asset('config/main.js') }}"></script>

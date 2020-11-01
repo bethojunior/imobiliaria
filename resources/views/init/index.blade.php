@@ -15,9 +15,17 @@
             </ul>
 
             <ul class="side-nav" id="mobile-demo">
-                <li><a href="sass.html">Sass</a></li>
-                <li><a href="badges.html">Components</a></li>
-                <li><a href="collapsible.html">JavaScript</a></li>
+                <li>
+                    <div class="user-view">
+                        <a><img width="150vw" src="{{ asset('assets/images/logo/logo.png') }}"></a>
+                        <a><span class=" name">Imobiliária Canuto</span></a>
+                        <a href="mailto:contato@imobiliariacanuto.com.br"><span class=" email">contato@imobiliariacanuto.com.br</span></a>
+                    </div>
+                </li>
+{{--                <li><div class="divider"></div></li>--}}
+                <li><a class="waves-effect" href="#!">Inicio</a></li>
+                <li><a class="waves-effect" href="#!">Sobre nós</a></li>
+                <li><a class="waves-effect" href="#!">Cotate-nos</a></li>
             </ul>
         </div>
         <div class="nav-content">

@@ -1,3 +1,10 @@
 .relative{
     position: relative!important;
 }
+:root{
+    --main-color :#CB5929;
+}
+
+.main-color{
+    color: var(--main-color)!important;
+}

@@ -14,4 +14,7 @@
     .logo{
         width: 40vw;
     }
+    .user-view{
+        background-color: var(--main-color);
+    }
 }
