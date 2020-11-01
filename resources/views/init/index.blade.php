@@ -2,6 +2,7 @@
 
 @section('content')
     <link href="{{ asset('css/nav/index.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/sales/init.css') }}" rel="stylesheet">
 
     <nav class="nav-extended">
         <div class="nav-wrapper">
@@ -32,8 +33,8 @@
             <ul class="tabs tabs-transparent">
                 <li class="tab"><a class="" href="#test1">Sobre nós</a></li>
                 <li class="tab"><a class="active" href="#test2">Vendas</a></li>
-                <li class="tab"><a href="#test3">Locação</a></li>
-                <li class="tab"><a href="#test4">Lançamentos</a></li>
+                <li class="tab"><a href="#test3">Contato</a></li>
+{{--                <li class="tab"><a href="#test4">Nossas redes sociais</a></li>--}}
             </ul>
         </div>
     </nav>

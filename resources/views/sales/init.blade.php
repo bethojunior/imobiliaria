@@ -1,4 +1,55 @@
 
+<div class="row col l12 s12 m12 filter">
+    <div class="col l12 s12 m12">
+        <p class="title-card">Filtros</p>
+    </div>
+    <div class="input-field col l2 s12 m12">
+        <select>
+            <option value="1">Vendas</option>
+            <option value="2">Locação</option>
+            <option value="3">Lançamentos</option>
+        </select>
+        <label>Tipo</label>
+    </div>
+    <div class="input-field col l2 s12 m12">
+        <select>
+            <option value="1">Apartamento</option>
+            <option value="2">Casa</option>
+            <option value="3">Condominio</option>
+        </select>
+        <label>Modelo</label>
+    </div>
+    <div class="input-field col l2 s12 m12">
+        <select>
+            <option value="1">Juazeiro do Norte</option>
+            <option value="2">Barbalha</option>
+            <option value="3">Crato</option>
+            <option value="3">Milagres</option>
+        </select>
+        <label>Cidade</label>
+    </div>
+    <div class="input-field col l2 s12 m12">
+        <select>
+            <option value="0">Escolha a cidade</option>
+            <option value="1">Pedrinhas</option>
+            <option value="2">Centro</option>
+            <option value="3">Bairro de Fátima</option>
+        </select>
+        <label>Bairro</label>
+    </div>
+    <div class="input-field col l2 s12 m12">
+        <select>
+            <option value="1">Até R$100.000,00</option>
+            <option value="2">R$100.000,00 à R$300.000,00</option>
+            <option value="3">R$300.000,00 à R$500.000,00</option>
+        </select>
+        <label>Valor</label>
+    </div>
+    <div class="input-field col l2 s12 m12">
+        <button class=" col l12 s12 m12 btn btn-info">Aplicar</button>
+    </div>
+</div>
+
 
 <div class="row">
     <div class="col s12 l3">
