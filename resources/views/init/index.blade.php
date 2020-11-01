@@ -1,10 +1,6 @@
 @extends('layouts.home')
 
 @section('content')
-    <link href="{{ asset('css/home/init.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/nav/index.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/sales/init.css') }}" rel="stylesheet">
-
     <nav class="nav-extended">
         <div class="nav-wrapper">
             <a href="#" class="brand-logo">

@@ -82,6 +82,11 @@
 </script>
 
 
+<link href="{{ asset('css/home/init.css') }}" rel="stylesheet">
+<link href="{{ asset('css/nav/index.css') }}" rel="stylesheet">
+<link href="{{ asset('css/sales/init.css') }}" rel="stylesheet">
+
+
 @yield('content')
 
 
