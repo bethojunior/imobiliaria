@@ -10,11 +10,30 @@
 .tabs.tabs-transparent{
     margin-top: 1vw;
 }
+.modal.bottom-sheet {
+    top: auto;
+    bottom: -100%;
+    margin: 0;
+    width: 100%;
+    max-height: 75%!important;
+    border-radius: 0;
+    will-change: bottom, opacity;
+}
+
 @media screen and (max-width: 992px) {
     .logo{
         width: 40vw;
     }
     .user-view{
         background-color: var(--main-color);
+    }
+    .modal.bottom-sheet {
+        top: auto;
+        bottom: -100%;
+        margin: 0;
+        width: 100%;
+        max-height: 75%!important;
+        border-radius: 0;
+        will-change: bottom, opacity;
     }
 }

@@ -187,7 +187,7 @@
 </div>
 
 
-<div id="modal-sale" class="modal">
+<div id="modal-sale" class="modal bottom-sheet">
     <div class="modal-content">
         <div class="row col l12 s12">
             <div class="slider">
