@@ -1,7 +1,7 @@
 {
-    "short_name": "Madgic",
-    "name": "Madgic Cardápio",
-    "description": "Madgic",
+    "short_name": "Imobiliaria",
+    "name": "Imobiliária Canuto",
+    "description": "Imobiliária Canuto CraJuBar",
     "icons": [
         {
             "src": "/assets/images/logo/logo.png",
@@ -29,9 +29,9 @@
             "type": "image/png"
         }
     ],
-    "start_url": "https://pdv.madgic.com.br",
+    "start_url": "https://imobiliaria.madgic.com.br",
     "display": "standalone",
     "orientation": "portrait",
-    "theme_color": "#8CC9F0",
-    "background_color": "#8CC9F0"
+    "theme_color": "#CB5929",
+    "background_color": "#CB5929"
 }

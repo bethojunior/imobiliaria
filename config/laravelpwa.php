@@ -3,11 +3,11 @@
 return [
     'name' => 'PDV',
     'manifest' => [
-        'name' => env('APP_NAME', 'My PWA App'),
-        'short_name' => 'PDV - Madgic',
+        'name' => env('APP_NAME', 'Imobiliária Canuto'),
+        'short_name' => 'Imobiliária Canuto',
         'start_url' => '/',
-        'background_color' => '#ffffff',
-        'theme_color' => '#000000',
+        'background_color' => '#CB5929',
+        'theme_color' => '#CB5929',
         'display' => 'standalone',
         'orientation'=> 'any',
         'status_bar'=> 'black',
@@ -59,8 +59,8 @@ return [
         ],
         'shortcuts' => [
             [
-                'name' => 'Cardápio',
-                'description' => 'Abrir cardápio',
+                'name' => 'Vendas',
+                'description' => 'Abrir Vendas',
                 'url' => '/',
                 'icons' => [
                     "src" => "/images/icons/icon-72x72.png",
@@ -68,9 +68,9 @@ return [
                 ]
             ],
             [
-                'name' => 'Vendedor',
-                'description' => 'Fazer login',
-                'url' => '/login',
+                'name' => 'Locação',
+                'description' => 'Abrir locação',
+                'url' => '/',
                 'icons' => [
                     "src" => "/images/icons/icon-72x72.png",
                     "purpose" => "any"
