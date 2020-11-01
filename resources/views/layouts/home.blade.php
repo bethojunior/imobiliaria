@@ -51,8 +51,6 @@
 <meta property="og:site_name" content="Imobiliária Canuto" />
 
 
-<script src="{{ asset('config/main.js') }}"></script>
-
 <script src="{{ asset('js/libs/print.js') }}"></script>
 <script src="{{ asset('js/service/Session.js') }}"></script>
 <script src="{{ asset('js/libs/sweetalertmin.js') }}"></script>

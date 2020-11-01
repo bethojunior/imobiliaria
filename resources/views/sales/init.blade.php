@@ -36,7 +36,7 @@
                         </li>
                     </ul>
                 </div>
-                <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                <a class="btn-floating halfway-fab waves-effect waves-light red modal-sales"><i class="fa fa-eye" aria-hidden="true"></i></a>
             </div>
             <div class="card-content">
                 <span class="card-title">Consulte</span>
@@ -81,7 +81,7 @@
                         </li>
                     </ul>
                 </div>
-                <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                <a class="btn-floating halfway-fab waves-effect waves-light red modal-sales"><i class="fa fa-eye" aria-hidden="true"></i></a>
             </div>
             <div class="card-content">
                 <span class="card-title">Sitio <label>Area rural do Crato - Ce</label></span>
@@ -127,7 +127,7 @@
                         </li>
                     </ul>
                 </div>
-                <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                <a class="btn-floating halfway-fab waves-effect waves-light red modal-sales"><i class="fa fa-eye" aria-hidden="true"></i></a>
             </div>
             <div class="card-content">
                 <span class="card-title">Apartamento </span>
@@ -173,7 +173,7 @@
                         </li>
                     </ul>
                 </div>
-                <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                <a class="btn-floating halfway-fab waves-effect waves-light red modal-sales"><i class="fa fa-eye" aria-hidden="true"></i></a>
             </div>
             <div class="card-content">
                 <span class="card-title">Condominio <label>Juazeiro do norte - Ce</label></span>
@@ -183,5 +183,50 @@
                 </p>
             </div>
         </div>
+    </div>
+</div>
+
+
+<div id="modal-sale" class="modal">
+    <div class="modal-content">
+        <div class="row col l12 s12">
+            <div class="slider">
+                <ul class="slides">
+                    <li>
+                        <img src="https://cdn.vistahost.com.br/canuto6551/vista.imobi/fotos/110/i59E1PO_11059d53be3bc927.jpg"> <!-- random image -->
+                        <div class="caption center-align">
+                            <h3>This is our big Tagline!</h3>
+                            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="https://cdn.vistahost.com.br/canuto6551/vista.imobi/fotos/110/i59E1PO_11059d53be619808.jpg"> <!-- random image -->
+                        <div class="caption left-align">
+                            <h3>Left Aligned Caption</h3>
+                            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="https://cdn.vistahost.com.br/canuto6551/vista.imobi/fotos/110/i59E1PO_11059d53be510a6f.jpg"> <!-- random image -->
+                        <div class="caption right-align">
+                            <h3>Right Aligned Caption</h3>
+                            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="https://cdn.vistahost.com.br/canuto6551/vista.imobi/fotos/110/i59E1PO_11059d53be85eb63.jpg"> <!-- random image -->
+                        <div class="caption center-align">
+                            <h3>This is our big Tagline!</h3>
+                            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <h4>Titulo</h4>
+        <p>Conteudo</p>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Fechar</a>
     </div>
 </div>
