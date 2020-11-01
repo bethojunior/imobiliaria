@@ -46,12 +46,7 @@
         @include('sales.init')
     </div>
     <div id="test3" class="col s12">
-        @include('carousel.init')
-        locação
-    </div>
-    <div id="test4" class="col s12">
-        @include('carousel.init')
-        Lançamentos
+        @include('contato.index')
     </div>
 
     <script src="{{ asset('js/modules/home/init.js') }}"></script>
