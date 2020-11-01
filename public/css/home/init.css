@@ -1,0 +1,33 @@
+.page-footer{
+
+}
+.page-footer .container .row .col.l4.s12 a i{
+    font-size: 1.1vw;
+    margin-left: 0.1vw;
+}
+
+@media screen and (max-width: 992px) {
+    .mobile-center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .text-center-mobile{
+        text-align: center;
+    }
+    .page-footer .container .row .col.l4.s12 p.image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .page-footer .container .row .col.l4.s12 p.links{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .page-footer .container .row .col.l4.s12 a i{
+        font-size: 10vw;
+        margin-left: 2vw;
+    }
+}
