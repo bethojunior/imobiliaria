@@ -1,0 +1,17 @@
+.nav-extended{
+    /*padding-top: 1vw;*/
+    background-color: #CB5929!important;
+}
+.logo{
+    width: 10vw;
+    padding-left: 1vw;
+    padding-top: 1vw;
+}
+.tabs.tabs-transparent{
+    margin-top: 1vw;
+}
+@media screen and (max-width: 992px) {
+    .logo{
+        width: 40vw;
+    }
+}
