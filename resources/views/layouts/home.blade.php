@@ -47,7 +47,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://imobiliaria.madgic.com.br/" />
 <meta property="og:image" content="https://imobiliaria.madgic.com.br/assets/images/logo/logo.png" />
-<meta property="og:description" content="Imobiliária Canuto" />
+<meta property="og:description" content="Imobiliária em Juazeiro do Norte - Procurando por um imóvel no Crajubar?" />
 <meta property="og:site_name" content="Imobiliária Canuto" />
 
 
