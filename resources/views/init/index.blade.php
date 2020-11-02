@@ -52,31 +52,49 @@
                 <label class="phone white-text"><i class="fa fa-phone" aria-hidden="true"></i> 88 9965-1575</label>
                 <label class="mail white-text"><i class="fa fa-envelope-o" aria-hidden="true"></i> contato@madgic.com.br</label>
             </div>
-            <div class="col l6 relative">
+            <div class="col l3 relative">
                 <a target="_blank" class="grey-text text-lighten-3" href="#!"><i class="social fa fa-facebook" aria-hidden="true"></i></a>
                 <a target="_blank" class="grey-text text-lighten-3" href="https://www.instagram.com/imobiliariacanuto/"><i class="social fa fa-instagram" aria-hidden="true"></i></a>
 {{--                <span><i class="fa fa-info-circle" aria-hidden="true"></i> Agora ficou fácil</span>--}}
                 <button class="add-imovel">Anuncie seu imovel conosco</button>
             </div>
+            <div class="col l3">&nbsp;</div>
+
         </div>
     </div>
 
     <nav class="main-nav">
-        <div class="nav-wrapper row col l12 ">
+
+
+        <div class="row col l12">
             <div class="col l3">&nbsp;</div>
-            <div class="col l2" style="position: relative">
-                <div>
-                    <img class="responsive-img" style="width: 5vw" src="{{ asset('assets/images/logo/icon.png') }}">
-                </div>
+            <div class="col l2">
+                <img class="responsive-img" style="width: 5vw" src="{{ asset('assets/images/logo/icon.png') }}">
             </div>
-            <div class="col l6 relative">
-                <a style="margin-left: 1.4vw" href="">SOBRE NÓS</a>
-                <a style="margin-left: 1.4vw" href="">VENDAS</a>
-                <a style="margin-left: 1.4vw" href="">LOCAÇÃO</a>
-                <a style="margin-left: 1.4vw" href="">LANÇAMENTOS</a>
+            <div class="col l4 relative">
+                                <a style="margin-left: 1.4vw" href="">SOBRE NÓS</a>
+                                <a style="margin-left: 1.4vw" href="">VENDAS</a>
+                                <a style="margin-left: 1.4vw" href="">LOCAÇÃO</a>
+                                <a style="margin-left: 1.4vw" href="">LANÇAMENTOS</a>
             </div>
-            <div class="col l1">&nbsp;</div>
+            <div class="col l3">&nbsp;</div>
+
         </div>
+{{--        <div class="nav-wrapper row col l12 ">--}}
+{{--            <div class="col l3">&nbsp;</div>--}}
+{{--            <div class="col l2" style="position: relative">--}}
+{{--                <div>--}}
+{{--                    <img class="responsive-img" style="width: 5vw" src="{{ asset('assets/images/logo/icon.png') }}">--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <div class="col l6 relative">--}}
+{{--                <a style="margin-left: 1.4vw" href="">SOBRE NÓS</a>--}}
+{{--                <a style="margin-left: 1.4vw" href="">VENDAS</a>--}}
+{{--                <a style="margin-left: 1.4vw" href="">LOCAÇÃO</a>--}}
+{{--                <a style="margin-left: 1.4vw" href="">LANÇAMENTOS</a>--}}
+{{--            </div>--}}
+{{--            <div class="col l1">&nbsp;</div>--}}
+{{--        </div>--}}
 {{--        <div class="nav-wrapper row col l12">--}}
 {{--            <div class="col l4">&nbsp;</div>--}}
 {{--            <div class="col l4">--}}
