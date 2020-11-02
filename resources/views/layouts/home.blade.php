@@ -33,12 +33,12 @@
 <link href="{{ asset('images/icons/splash-2048x2732.png') }}" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
 
 <!-- Tile for Win8 -->
-<meta name="msapplication-TileColor" content="#CB5929">
+<meta name="msapplication-TileColor" content="#267CCA">
 <meta name="msapplication-TileImage" content="{{ asset('assets/images/logo/logo.png') }}">
 
 
 <meta charset="utf-8" />
-<meta name="theme-color" content="#CB5929">
+<meta name="theme-color" content="#267CCA">
 <link rel="icon" href="{{ asset('assets/images/logo/logo.png') }}">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
