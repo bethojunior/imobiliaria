@@ -38,7 +38,7 @@
 
     <a href="#" data-activates="slide-out" class="button-collapse  mobile-only">
         <i class="material-icons btn-nav">menu</i>
-        <div class="center">
+        <div class="center" style="padding-bottom: 2vw;padding-top: 1vw;">
             <img width="100vw" src="{{ asset('assets/images/logo/logo.png') }}">
         </div>
     </a>
