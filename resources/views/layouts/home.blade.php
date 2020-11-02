@@ -13,13 +13,13 @@
 <link rel="manifest" href="{{ asset('manifest.json') }}">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="application-name" content="PWA">
-<link rel="icon" sizes="512x512" href="{{ asset('assets/images/logo/logo.png') }}">
+<link rel="icon" sizes="512x512" href="{{ asset('assets/images/logo/icon.png') }}">
 
 <!-- Add to homescreen for Safari on iOS -->
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <meta name="apple-mobile-web-app-title" content="PWA">
-<link rel="apple-touch-icon" href="{{ asset('assets/images/logo/logo.png') }}">
+<link rel="apple-touch-icon" href="{{ asset('assets/images/logo/icon.png') }}">
 
 <link href="{{ asset('images/icons/splash-640x1136.png') }}" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
 <link href="{{ asset('images/icons/splash-750x1334.png') }}" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
@@ -34,12 +34,12 @@
 
 <!-- Tile for Win8 -->
 <meta name="msapplication-TileColor" content="#267CCA">
-<meta name="msapplication-TileImage" content="{{ asset('assets/images/logo/logo.png') }}">
+<meta name="msapplication-TileImage" content="{{ asset('assets/images/logo/icon.png') }}">
 
 
 <meta charset="utf-8" />
 <meta name="theme-color" content="#267CCA">
-<link rel="icon" href="{{ asset('assets/images/logo/logo.png') }}">
+<link rel="icon" href="{{ asset('assets/images/logo/icon.png') }}">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
 
@@ -47,7 +47,7 @@
 <meta property="og:title" content="Rafael Ferreira Imóveis" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://imobiliaria.madgic.com.br/" />
-<meta property="og:image" content="https://imobiliaria.madgic.com.br/assets/images/logo/logo.png" />
+<meta property="og:image" content="https://imobiliaria.madgic.com.br/assets/images/logo/icon.png" />
 <meta property="og:description" content="Imobiliária em Juazeiro do Norte - Procurando por um imóvel no Crajubar?" />
 <meta property="og:site_name" content="Rafael Ferreira Imóveis" />
 
