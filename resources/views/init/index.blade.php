@@ -113,21 +113,15 @@
                     </ul>
                 </div>
                 <div class="col l4 s12">
-{{--                    <h5 class="white-text">Links</h5>--}}
-{{--                    <ul>--}}
-{{--                        <li><a target="_blank" class="grey-text text-lighten-3" href=https://api.whatsapp.com/send?phone=5511953259744"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>--}}
-{{--                        <li><a target="_blank" class="grey-text text-lighten-3" href="https://www.instagram.com/imobiliariacanuto/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>--}}
-{{--                        <li><a target="_blank" class="grey-text text-lighten-3" href="#!"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>--}}
-{{--                        <li><a target="_blank" class="grey-text text-lighten-3" href="https://twitter.com/canutoimoveis"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>--}}
-{{--                        <li><a target="_blank" class="grey-text text-lighten-3" href="https://www.youtube.com/channel/UCqEmoL3UIp4QNMfadKbzEuw"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>--}}
-{{--                    </ul>--}}
+                    <h5 class="white-text">Onde estamos</h5>
+                    <iframe class=" col s12 m12 l12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.949823649858!2d-39.3161629852252!3d-7.246551094769027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a1825f2a45abb1%3A0x42827b689560e098!2sRAFAEL%20FERREIRA%20IM%C3%93VEIS!5e0!3m2!1spt-BR!2sbr!4v1604341528395!5m2!1spt-BR!2sbr" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
                 </div>
-                <div class="row col s12 m12 l12">
-                    <div class="center">
-                        <h4>Onde estamos</h4>
-                    </div>
-                    <iframe class=" col s12 m12 l12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.949823649858!2d-39.3161629852252!3d-7.246551094769027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a1825f2a45abb1%3A0x42827b689560e098!2sRAFAEL%20FERREIRA%20IM%C3%93VEIS!5e0!3m2!1spt-BR!2sbr!4v1604341528395!5m2!1spt-BR!2sbr" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                </div>
+{{--                <div class="row col s12 m12 l12">--}}
+{{--                    <div class="center">--}}
+{{--                        <h4>Onde estamos</h4>--}}
+{{--                    </div>--}}
+{{--                    </div>--}}
             </div>
         </div>
         <div class="footer-copyright">

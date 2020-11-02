@@ -14,7 +14,13 @@
 .row.col.l12.s12.m12.filter .col.s12.m12.l12 .title-card{
     font-size: 1vw;
 }
-
+.btn-floating.halfway-fab.waves-effect.waves-light.red.modal-sales{
+    background-color: var(--main-color)!important;
+}
+.type-sale{
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
 @media screen and (max-width: 992px) {
     .row.col.l12.s12.m12.filter{
         margin-top: 10vw;
