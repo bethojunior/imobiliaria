@@ -75,6 +75,7 @@
                 <a style="margin-left: 1.4vw" href="">LOCAÇÃO</a>
                 <a style="margin-left: 1.4vw" href="">LANÇAMENTOS</a>
             </div>
+            <div class="col l1">&nbsp;</div>
         </div>
 {{--        <div class="nav-wrapper row col l12">--}}
 {{--            <div class="col l4">&nbsp;</div>--}}
