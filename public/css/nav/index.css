@@ -1,12 +1,65 @@
 body{
     font-family: Montserrat!important;
 }
-.nav-extended{
-    /*padding-top: 1vw;*/
-    background-color: #CB5929!important;
+.main-nav{
+    background-color: #267CCA!important;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    height: 5vw!important;
+    padding-top: 1vw;
 }
+nav.mobile-none{
+    background-color: #1060a5!important;
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+.main-nav .nav-wrapper.row.col.l12 .col.l8 span{
+    margin-left: 2.4vw;
+}
+.mobile-none .nav-wrapper.row.col.l12 .col.l6 span{
+    padding-left: 0.2vw!important;
+    cursor: pointer
+}
+.mobile-none .nav-wrapper.row.col.l12 .col.l6 i.social{
+    /*font-size: 2vw;*/
+    transition: 0.5s;
+    cursor: pointer;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+.mobile-none .nav-wrapper.row.col.l12 .col.l6 i.fa-facebook.social:hover{
+    transition: 0.5s;
+    background-color: #087AEA;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+.mobile-none .nav-wrapper.row.col.l12 .col.l6 i.fa-instagram.social:hover{
+    transition: 0.5s;
+    background-color: #C42F8B;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+.mobile-none .nav-wrapper.row.col.l12 .col.l6 button.add-imovel{
+    background-color: #4970A2;
+    color: white;
+    border: none;
+    margin-left: 2vw;
+    width: auto;
+
+}
+.mobile-none .nav-wrapper.row.col.l12 .col.l6 span:hover{
+    transition: 0.5s;
+    color: #4669A6;
+}
+
+.mobile-none .nav-wrapper.row.col.l12 .col.l6 span.mail{
+    border-left: 1px white solid;
+    padding-left: 0.3vw!important;
+}
+
+
 .logo{
-    width: 10vw;
+    width: 7vw;
     padding-left: 1vw;
     padding-top: 1vw;
 }
@@ -23,9 +76,20 @@ body{
     will-change: bottom, opacity;
 }
 
+.mobile-only{
+    display: none;
+}
+
 @media screen and (max-width: 992px) {
+    .button-collapse.mobile-only{}
+    .mobile-only{
+        display: block;
+    }
+    .mobile-none{
+        display: none;
+    }
     .logo{
-        width: 40vw;
+        width: 27vw;
     }
     .user-view{
         background-color: var(--main-color);
@@ -38,5 +102,8 @@ body{
         max-height: 90%!important;
         border-radius: 0;
         will-change: bottom, opacity;
+    }
+    .main-nav{
+        display: none;
     }
 }

@@ -1,61 +1,92 @@
 @extends('layouts.home')
 
 @section('content')
-    <nav class="nav-extended">
-        <div class="nav-wrapper">
-            <a href="#" class="brand-logo">
-                <img class="logo" src="{{ asset('assets/images/logo/logo.png') }}">
-            </a>
-            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="/">Contate-nos</a></li>
-                <li><a href="/">Contate-nos</a></li>
-            </ul>
-
-            <ul class="side-nav" id="mobile-demo">
+    <!-- nav mobile -->
+    <ul id="slide-out" class="side-nav  mobile-only">
+        <li><a href="#!">First Sidebar Link</a></li>
+        <li><a href="#!">Second Sidebar Link</a></li>
+        <li class="no-padding">
+            <ul class="collapsible collapsible-accordion">
                 <li>
-                    <div class="user-view">
-                        <a><img width="150vw" src="{{ asset('assets/images/logo/logo.png') }}"></a>
-                        <a><span class=" name">Imobiliária Canuto</span></a>
-                        <a href="mailto:contato@imobiliariacanuto.com.br"><span class=" email">contato@imobiliariacanuto.com.br</span></a>
+                    <a class="collapsible-header">Dropdown<i class="material-icons">arrow_drop_down</i></a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="#!">First</a></li>
+                            <li><a href="#!">Second</a></li>
+                            <li><a href="#!">Third</a></li>
+                            <li><a href="#!">Fourth</a></li>
+                        </ul>
                     </div>
                 </li>
-{{--                <li><div class="divider"></div></li>--}}
-                <li><a class="waves-effect" href="#!">Inicio</a></li>
-                <li><a class="waves-effect" href="#!">Sobre nós</a></li>
-                <li><a class="waves-effect" href="#!">Contate-nos</a></li>
             </ul>
+        </li>
+    </ul>
+    <ul class="right hide-on-med-and-down  mobile-only">
+        <li><a href="#!">First Sidebar Link</a></li>
+        <li><a href="#!">Second Sidebar Link</a></li>
+        <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+        <ul id='dropdown1' class='dropdown-content'>
+            <li><a href="#!">First</a></li>
+            <li><a href="#!">Second</a></li>
+            <li><a href="#!">Third</a></li>
+            <li><a href="#!">Fourth</a></li>
+        </ul>
+    </ul>
+    <a href="#" data-activates="slide-out" class="button-collapse  mobile-only">
+        <i class="material-icons">menu</i>
+        <div class="center">
+            <img width="100vw" src="{{ asset('assets/images/logo/logo.png') }}">
         </div>
-        <div class="nav-content">
-            <ul class="tabs tabs-transparent">
-                <li class="tab"><a class="" href="#test1">Sobre nós</a></li>
-                <li class="tab"><a class="active" href="#test2">Vendas</a></li>
-{{--                <li class="tab"><a href="#test3">Locação</a></li>--}}
-                <li class="tab"><a href="#test4">Fale Conosco</a></li>
-            </ul>
+    </a>
+
+    <!-- nav mobile -->
+
+    <nav class="mobile-none">
+        <div class="nav-wrapper row col l12 ">
+            <div class="col l6">
+                <span><i class="fa fa-phone" aria-hidden="true"></i> 88 3511-0929 / 3587-1857</span>
+                <span class="mail"><i class="fa fa-envelope-o" aria-hidden="true"></i> contato@madgic.com.br</span>
+            </div>
+            <div class="col l6 relative">
+                <a target="_blank" class="grey-text text-lighten-3" href="#!"><i class="social fa fa-facebook" aria-hidden="true"></i></a>
+                <a target="_blank" class="grey-text text-lighten-3" href="https://www.instagram.com/imobiliariacanuto/"><i class="social fa fa-instagram" aria-hidden="true"></i></a>
+{{--                <span><i class="fa fa-info-circle" aria-hidden="true"></i> Agora ficou fácil</span>--}}
+                <button class="add-imovel">Anuncie seu imovel conosco</button>
+            </div>
         </div>
     </nav>
-    <div id="test1" class="col s12">
-        @include('carousel.init')
-    </div>
-    <div id="test2" class="col s12">
-        @include('carousel.init')
-        @include('sales.init')
-    </div>
-{{--    <div id="test3" class="col s12">--}}
-{{--        @include('carousel.init')--}}
-{{--        locação--}}
-{{--    </div>--}}
-    <div id="test4" class="col s12">
-        @include('contact.index')
-    </div>
 
-    <footer style="background-color: #CB5929" class="page-footer">
+    <nav class="main-nav">
+        <div class="nav-wrapper row col l12">
+            <div class="col l4">
+                <a href="#" class="brand-logo">
+                    <img width="100vw" src="{{ asset('assets/images/logo/rafael-white.png') }}">
+                </a>
+            </div>
+            <div class="col l8">
+{{--                <span><a href="">Home</a></span>--}}
+                <span><a href="">Quem Somos</a></span>
+                <span><a href="">Venda</a></span>
+                <span><a href="">Locação</a></span>
+                <span><a href="">Lançamentos</a></span>
+                <span><a href="">Contato</a></span>
+            </div>
+
+        </div>
+    </nav>
+
+
+    @include('carousel.init')
+    @include('sales.init')
+
+
+
+<footer style="background-color: #267CCA" class="page-footer">
         <div class="container">
             <div class="row col l12 m12 s12">
                 <div class="col l4 s12">
                     <p class="image">
-                        <img width="150vw" src="{{ asset('assets/images/logo/logo.png') }}">
+                        <img width="150vw" src="{{ asset('assets/images/logo/rafael-white.png') }}">
                     </p>
                     <p class="links">
                         <a target="_blank" class="grey-text text-lighten-3" href=https://api.whatsapp.com/send?phone=5511953259744"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
