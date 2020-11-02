@@ -1,6 +1,6 @@
 {
-    "short_name": "Imobiliaria",
-    "name": "Imobiliária Canuto",
+    "short_name": "Rafael F.",
+    "name": "Rafael Ferreira Imóveis",
     "description": "Imobiliária Canuto CraJuBar",
     "icons": [
         {
@@ -32,6 +32,6 @@
     "start_url": "https://imobiliaria.madgic.com.br",
     "display": "standalone",
     "orientation": "portrait",
-    "theme_color": "#CB5929",
-    "background_color": "#CB5929"
+    "theme_color": "#267CCA",
+    "background_color": "#267CCA"
 }

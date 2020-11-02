@@ -44,12 +44,12 @@
 
 
 <meta name="description" content="Imobiliária em Juazeiro do Norte - Procurando por um imóvel no Crajubar? Encontre ótimas oportunidades de imóveis para locação em nosso site. Clique e confira!" />
-<meta property="og:title" content="Imobiliária Canuto" />
+<meta property="og:title" content="Rafael Ferreira Imóveis" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://imobiliaria.madgic.com.br/" />
 <meta property="og:image" content="https://imobiliaria.madgic.com.br/assets/images/logo/logo.png" />
 <meta property="og:description" content="Imobiliária em Juazeiro do Norte - Procurando por um imóvel no Crajubar?" />
-<meta property="og:site_name" content="Imobiliária Canuto" />
+<meta property="og:site_name" content="Rafael Ferreira Imóveis" />
 
 
 <script src="{{ asset('js/libs/print.js') }}"></script>

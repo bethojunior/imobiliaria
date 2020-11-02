@@ -3,11 +3,11 @@
 return [
     'name' => 'PDV',
     'manifest' => [
-        'name' => env('APP_NAME', 'Imobiliária Canuto'),
-        'short_name' => 'Imobiliária Canuto',
+        'name' => env('APP_NAME', 'Rafael Ferreira Imóveis'),
+        'short_name' => 'Rafael Ferreira',
         'start_url' => '/',
-        'background_color' => '#CB5929',
-        'theme_color' => '#CB5929',
+        'background_color' => '#267CCA',
+        'theme_color' => '#267CCA',
         'display' => 'standalone',
         'orientation'=> 'any',
         'status_bar'=> 'black',

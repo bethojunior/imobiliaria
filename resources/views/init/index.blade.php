@@ -3,18 +3,32 @@
 @section('content')
     <!-- nav mobile -->
     <ul id="slide-out" class="side-nav  mobile-only">
-        <li><a href="#!">First Sidebar Link</a></li>
-        <li><a href="#!">Second Sidebar Link</a></li>
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="{{ asset('assets/images/middle_ground.jpg') }}">
+                </div>
+                <a href="#!user"><img width="100vw" src="{{ asset('assets/images/logo/rafael-white.png') }}"></a>
+                <a href="#!name"><span class="white-text name">Rafael Ferreira Imoveis</span></a>
+                <a href="#!name"><span class="white-text name">&nbsp;</span></a>
+{{--                <a href="mailto:drajessycamartins@gmail.com"><span class="white-text email">Drajessycamartins@gmail.com</span></a>--}}
+            </div></li>
+        <li><a href="/">Home</a></li>
+        <li><div class="divider"></div></li>
+        <li><a id="">Vendas</a></li>
+        <li><a id="">Contato</a></li>
+
+
         <li class="no-padding">
             <ul class="collapsible collapsible-accordion">
                 <li>
-                    <a class="collapsible-header">Dropdown<i class="material-icons">arrow_drop_down</i></a>
+                    <a class="collapsible-header">Redes sociais<i class="material-icons">arrow_drop_down</i></a>
                     <div class="collapsible-body">
                         <ul>
-                            <li><a href="#!">First</a></li>
-                            <li><a href="#!">Second</a></li>
-                            <li><a href="#!">Third</a></li>
-                            <li><a href="#!">Fourth</a></li>
+                            <a target="_blank" class="main-color text-lighten-3" href=https://api.whatsapp.com/send/?phone=558899651575&text&app_absent=0"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                            <a target="_blank" class="main-color text-lighten-3" href="https://www.instagram.com/rafael_ferreira_imoveis/?hl=pt-br"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            <a target="_blank" class="main-color text-lighten-3" href="https://www.facebook.com/761384800592861/posts/2826210050776982/?d=n"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a target="_blank" class="main-color text-lighten-3" href="https://www.youtube.com/watch?v=4Z7eNCZIoWA&feature=youtu.be"><i class="fa fa-youtube" aria-hidden="true"></i></a>
                         </ul>
                     </div>
                 </li>
@@ -89,11 +103,10 @@
                         <img width="150vw" src="{{ asset('assets/images/logo/rafael-white.png') }}">
                     </p>
                     <p class="links">
-                        <a target="_blank" class="grey-text text-lighten-3" href=https://api.whatsapp.com/send?phone=5511953259744"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
-                        <a target="_blank" class="grey-text text-lighten-3" href="https://www.instagram.com/imobiliariacanuto/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                        <a target="_blank" class="grey-text text-lighten-3" href="#!"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <a target="_blank" class="grey-text text-lighten-3" href="https://twitter.com/canutoimoveis"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <a target="_blank" class="grey-text text-lighten-3" href="https://www.youtube.com/channel/UCqEmoL3UIp4QNMfadKbzEuw"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                        <a target="_blank" class="grey-text text-lighten-3" href=https://api.whatsapp.com/send/?phone=558899651575&text&app_absent=0"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                        <a target="_blank" class="grey-text text-lighten-3" href="https://www.instagram.com/rafael_ferreira_imoveis/?hl=pt-br"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a target="_blank" class="grey-text text-lighten-3" href="https://www.facebook.com/761384800592861/posts/2826210050776982/?d=n"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a target="_blank" class="grey-text text-lighten-3" href="https://www.youtube.com/watch?v=4Z7eNCZIoWA&feature=youtu.be"><i class="fa fa-youtube" aria-hidden="true"></i></a>
                     </p>
                     <p class="grey-text text-lighten-4 mobile-center">
                         Imobiliária especializada em Vendas e Locações de Imóveis nos melhores bairros da cidade
@@ -121,7 +134,7 @@
                     <div class="center">
                         <h4>Onde estamos</h4>
                     </div>
-                    <iframe class="col l12 s12 m12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.1364324142482!2d-39.32555188522536!3d-7.225275294784053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a17fb218d86db1%3A0xd63fd82e4e577c96!2sImobili%C3%A1ria%20Canuto!5e0!3m2!1spt-BR!2sbr!4v1604256524645!5m2!1spt-BR!2sbr"  height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <iframe class=" col s12 m12 l12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.949823649858!2d-39.3161629852252!3d-7.246551094769027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a1825f2a45abb1%3A0x42827b689560e098!2sRAFAEL%20FERREIRA%20IM%C3%93VEIS!5e0!3m2!1spt-BR!2sbr!4v1604341528395!5m2!1spt-BR!2sbr" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
             </div>
         </div>
