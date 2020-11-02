@@ -58,7 +58,7 @@
     <nav class="mobile-none">
         <div class="nav-wrapper row col l12 ">
             <div class="col l6">
-                <span><i class="fa fa-phone" aria-hidden="true"></i> 88 3511-0929 / 3587-1857</span>
+                <span><i class="fa fa-phone" aria-hidden="true"></i> 88 9965-1575</span>
                 <span class="mail"><i class="fa fa-envelope-o" aria-hidden="true"></i> contato@madgic.com.br</span>
             </div>
             <div class="col l6 relative">
@@ -109,8 +109,10 @@
                         <a target="_blank" class="grey-text text-lighten-3" href="https://www.youtube.com/watch?v=4Z7eNCZIoWA&feature=youtu.be"><i class="fa fa-youtube" aria-hidden="true"></i></a>
                     </p>
                     <p class="grey-text text-lighten-4 mobile-center">
-                        Imobiliária especializada em Vendas e Locações de Imóveis nos melhores bairros da cidade
+                        Rafael Ferreira imóveis
+                        CRECI 11.219
                     </p>
+                    <p>Imobiliária especializada em Vendas e Locações de Imóveis nos melhores bairros da cidade</p>
                 </div>
                 <div class="col l4 s12 ">
                     <h4 class="mobile-center">Mapa do site</h4>
