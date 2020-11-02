@@ -81,6 +81,11 @@ nav.mobile-none{
 }
 
 @media screen and (max-width: 992px) {
+    .btn-nav{
+        position: absolute;
+        font-size: 11vw;
+        margin-top: 1.8vw;
+    }
     .button-collapse.mobile-only{}
     .mobile-only{
         display: block;

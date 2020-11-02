@@ -35,19 +35,9 @@
             </ul>
         </li>
     </ul>
-    <ul class="right hide-on-med-and-down  mobile-only">
-        <li><a href="#!">First Sidebar Link</a></li>
-        <li><a href="#!">Second Sidebar Link</a></li>
-        <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
-        <ul id='dropdown1' class='dropdown-content'>
-            <li><a href="#!">First</a></li>
-            <li><a href="#!">Second</a></li>
-            <li><a href="#!">Third</a></li>
-            <li><a href="#!">Fourth</a></li>
-        </ul>
-    </ul>
+
     <a href="#" data-activates="slide-out" class="button-collapse  mobile-only">
-        <i class="material-icons">menu</i>
+        <i class="material-icons btn-nav">menu</i>
         <div class="center">
             <img width="100vw" src="{{ asset('assets/images/logo/logo.png') }}">
         </div>
