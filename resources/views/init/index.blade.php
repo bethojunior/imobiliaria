@@ -45,11 +45,12 @@
 
     <!-- nav mobile -->
 
-    <nav class="mobile-none">
-        <div class="nav-wrapper row col l12 ">
-            <div class="col l6">
-                <span><i class="fa fa-phone" aria-hidden="true"></i> 88 9965-1575</span>
-                <span class="mail"><i class="fa fa-envelope-o" aria-hidden="true"></i> contato@madgic.com.br</span>
+    <div class="mobile-none">
+        <div class="row col l12">
+            <div class="col l3">&nbsp;</div>
+            <div class="col l3">
+                <label class="phone white-text"><i class="fa fa-phone" aria-hidden="true"></i> 88 9965-1575</label>
+                <label class="mail white-text"><i class="fa fa-envelope-o" aria-hidden="true"></i> contato@madgic.com.br</label>
             </div>
             <div class="col l6 relative">
                 <a target="_blank" class="grey-text text-lighten-3" href="#!"><i class="social fa fa-facebook" aria-hidden="true"></i></a>
@@ -58,24 +59,40 @@
                 <button class="add-imovel">Anuncie seu imovel conosco</button>
             </div>
         </div>
-    </nav>
+    </div>
 
     <nav class="main-nav">
-        <div class="nav-wrapper row col l12">
-            <div class="col l4">
-                <a href="#" class="brand-logo">
-                    <img width="100vw" src="{{ asset('assets/images/logo/rafael-white.png') }}">
-                </a>
+        <div class="nav-wrapper row col l12 ">
+            <div class="col l3">&nbsp;</div>
+            <div class="col l2" style="position: relative">
+                <div>
+                    <img class="responsive-img" style="width: 5vw" src="{{ asset('assets/images/logo/icon.png') }}">
+                </div>
             </div>
-            <div class="row col l8">
-{{--                <span><a href="">Home</a></span>--}}
-                <span class="col l2"><a href="">Quem Somos</a></span>
-                <span class="col l2"><a href="">Venda</a></span>
-                <span class="col l2"><a href="">Locação</a></span>
-                <span class="col l2"><a href="">Lançamentos</a></span>
+            <div class="col l6 relative">
+                <a style="margin-left: 1.4vw" href="">SOBRE NÓS</a>
+                <a style="margin-left: 1.4vw" href="">VENDAS</a>
+                <a style="margin-left: 1.4vw" href="">LOCAÇÃO</a>
+                <a style="margin-left: 1.4vw" href="">LANÇAMENTOS</a>
             </div>
-
         </div>
+{{--        <div class="nav-wrapper row col l12">--}}
+{{--            <div class="col l4">&nbsp;</div>--}}
+{{--            <div class="col l4">--}}
+{{--                <a href="#" class="brand-logo">--}}
+
+{{--                    <img width="100vw" src="{{ asset('assets/images/logo/rafael-white.png') }}">--}}
+{{--                </a>--}}
+{{--            </div>--}}
+{{--            <div class="row col l8">--}}
+{{--                <span><a href="">Home</a></span>--}}
+{{--                <span class="col l2"><a href="">Sobre nos</a></span>--}}
+{{--                <span class="col l2"><a href="">Venda</a></span>--}}
+{{--                <span class="col l2"><a href="">Locação</a></span>--}}
+{{--                <span class="col l2"><a href="">Lançamentos</a></span>--}}
+{{--            </div>--}}
+
+{{--        </div>--}}
     </nav>
 
 

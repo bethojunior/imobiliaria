@@ -3,15 +3,13 @@ body{
 }
 .main-nav{
     background-color: #267CCA!important;
-    padding-left: 20vw;
-    padding-right: 20vw;
-    height: 5vw!important;
-    padding-top: 1vw;
+    height: 7vw!important;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
 }
-nav.mobile-none{
+div.mobile-none{
     background-color: #1060a5!important;
-    padding-left: 20vw;
-    padding-right: 20vw;
+    height: 2vw;
 }
 .main-nav .nav-wrapper.row.col.l12 .col.l8 span{
     margin-left: 2.4vw;
@@ -27,37 +25,49 @@ nav.mobile-none{
     padding-left: 2vw;
     padding-right: 2vw;
 }
-.mobile-none .nav-wrapper.row.col.l12 .col.l6 i.fa-facebook.social:hover{
+i.fa-facebook.social,  i.fa-instagram.social{
     transition: 0.5s;
-    background-color: #087AEA;
-    padding-left: 2vw;
-    padding-right: 2vw;
+    margin-left: 1vw;
 }
-.mobile-none .nav-wrapper.row.col.l12 .col.l6 i.fa-instagram.social:hover{
+i.fa-facebook.social:hover{
     transition: 0.5s;
-    background-color: #C42F8B;
-    padding-left: 2vw;
-    padding-right: 2vw;
+    color: #087AEA;
 }
-.mobile-none .nav-wrapper.row.col.l12 .col.l6 button.add-imovel{
+.col.l4 i.fa-instagram.social:hover{
+    transition: 0.5s;
+    color: #C42F8B;
+    padding-top: 0;
+}
+button.add-imovel{
     background-color: #4970A2;
     color: white;
     border: none;
     margin-left: 2vw;
     width: auto;
-
+    height: 100%;
 }
-.mobile-none .nav-wrapper.row.col.l12 .col.l6 span:hover{
+.mobile-none .nav-wrapper.row.col.l12 .col.l6 label:hover{
+    cursor: pointer;
     transition: 0.5s;
-    color: #4669A6;
+    color: white;
 }
 
-.mobile-none .nav-wrapper.row.col.l12 .col.l6 span.mail{
+label{
+    cursor: pointer;
+}
+label:hover{
+    color: cornflowerblue!important;
+    transition: 0.5s;
+}
+label.mail{
+    transition: 0.5s;
+    cursor: pointer;
     border-left: 1px white solid;
     padding-left: 0.3vw!important;
 }
-
-
+label.mail , label.phone{
+    /*margin-top: 5vh;*/
+}
 .logo{
     width: 7vw;
     padding-left: 1vw;
