@@ -67,13 +67,12 @@
                     <img width="100vw" src="{{ asset('assets/images/logo/rafael-white.png') }}">
                 </a>
             </div>
-            <div class="col l8">
+            <div class="row col l8">
 {{--                <span><a href="">Home</a></span>--}}
-                <span><a href="">Quem Somos</a></span>
-                <span><a href="">Venda</a></span>
-                <span><a href="">Locação</a></span>
-                <span><a href="">Lançamentos</a></span>
-                <span><a href="">Contato</a></span>
+                <span class="col l2"><a href="">Quem Somos</a></span>
+                <span class="col l2"><a href="">Venda</a></span>
+                <span class="col l2"><a href="">Locação</a></span>
+                <span class="col l2"><a href="">Lançamentos</a></span>
             </div>
 
         </div>
