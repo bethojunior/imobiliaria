@@ -72,10 +72,10 @@
                 <img class="responsive-img" style="width: 5vw" src="{{ asset('assets/images/logo/icon.png') }}">
             </div>
             <div class="col l4 relative">
-                                <a style="margin-left: 1.4vw" href="">SOBRE NÓS</a>
-                                <a style="margin-left: 1.4vw" href="">VENDAS</a>
-                                <a style="margin-left: 1.4vw" href="">LOCAÇÃO</a>
-                                <a style="margin-left: 1.4vw" href="">LANÇAMENTOS</a>
+            <a style="margin-left: 1vw" href="">SOBRE NÓS</a>
+            <a style="margin-left: 1vw" href="">VENDAS</a>
+            <a style="margin-left: 1vw" href="">LOCAÇÃO</a>
+            <a style="margin-left: 1vw" href="">LANÇAMENTOS</a>
             </div>
             <div class="col l3">&nbsp;</div>
 
