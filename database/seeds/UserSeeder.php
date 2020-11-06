@@ -17,16 +17,12 @@ class UserSeeder extends Seeder
                 'email' => 'eu@betho.com',
                 'phone' => '85994253764',
                 'password' => Hash::make('123456789'),
-                'user_status_id' => '2',
-                'user_type_id' => '1',
             ],
             [
-                'name' => 'Suporte',
-                'email' => 'suporte@fabrica704.com.br',
+                'name' => 'Admin',
+                'email' => 'admin@madgic.com.br',
                 'phone' => '85994253764',
                 'password' => Hash::make('admin12'),
-                'user_status_id' => '2',
-                'user_type_id' => '1',
             ],
         ]);
     }

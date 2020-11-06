@@ -209,11 +209,49 @@ return [
     |
     */
 
-    'init' => [
+    'menu' => [
         [
             'text' => 'search',
             'search' => false,
             'topnav' => true,
+        ],
+        [
+            'text'        => 'Slides',
+            'url'         => '#',
+            'icon'        => 'fas fa-fw fa-home',
+        ],
+        [
+            'text'        => 'Configurações do site',
+            'url'         => '#',
+            'icon'        => 'fas fa-fw fa-home',
+        ],
+        [
+            'text'        => 'Localidade',
+            'icon'        => 'fas fa-fw fa-home',
+            'submenu' => [
+                [
+                    'text' => 'Cidades',
+                    'url'  => 'home/cities',
+                ],
+                [
+                    'text' => 'Bairros',
+                    'url'  => 'home/neighborhood',
+                ]
+            ]
+        ],
+        [
+            'text'        => 'Imoveis',
+            'icon'        => 'fas fa-fw fa-home',
+            'submenu' => [
+                [
+                    'text' => 'Inserir',
+                    'url'  => 'home/blog',
+                ],
+                [
+                    'text' => 'Listar',
+                    'url'  => 'home/listBlog',
+                ]
+            ]
         ],
 
     ],

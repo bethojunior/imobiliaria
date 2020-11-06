@@ -23,17 +23,6 @@ class CreateUsersTable extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
-
-            $table->unsignedInteger('user_status_id')->default(2);
-            $table->foreign('user_status_id')
-                ->references('id')
-                ->on('user_status');
-
-            $table->unsignedInteger('user_type_id')->default(1);
-            $table->foreign('user_type_id')
-                ->references('id')
-                ->on('user_types');
-
             $table->timestamps();
         });
     }

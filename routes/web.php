@@ -12,11 +12,25 @@ Route::get('/login', function () {
 });
 
 
-
 Route::group(['prefix' => 'home'], function () {
     Route::group(['as' => 'home'], function () {
-        Route::get('', 'Home\HomeController@index')->name('.home');
+        Route::get('', 'Admin\AdminController@index')->name('.home');
+        Route::get('cities', 'CitiesController\CitiesController@index')->name('.cities');
+        Route::get('neighborhood', 'Neighborhood\NeighborhoodController@index')->name('.neighborhood');
     });
 });
+
+Route::group(['prefix' => 'cities'], function () {
+    Route::group(['as' => 'cities'], function () {
+        Route::post('', 'CitiesController\CitiesController@create')->name('.create');
+    });
+});
+
+Route::group(['prefix' => 'neighborhood'], function () {
+    Route::group(['as' => 'neighborhood'], function () {
+        Route::post('', 'Neighborhood\NeighborhoodController@create')->name('.create');
+    });
+});
+
 
 

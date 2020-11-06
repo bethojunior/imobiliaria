@@ -2,13 +2,13 @@ body{
     font-family: Montserrat!important;
 }
 .main-nav{
-    background-color: #267CCA!important;
+    background-color: #599cd6!important;
     height: 7vw!important;
     padding-top: 2vw;
     padding-bottom: 2vw;
 }
 div.mobile-none{
-    background-color: #1060a5!important;
+    background-color: #146cba!important;
     height: 2vw;
 }
 .main-nav .nav-wrapper.row.col.l12 .col.l8 span{
