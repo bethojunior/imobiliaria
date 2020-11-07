@@ -9,16 +9,16 @@
 <link rel="stylesheet" href="{{ asset('css/default/config.css') }}">
 <link rel="stylesheet" href="{{ asset('config/main.css') }}">
 <link rel="stylesheet" href="{{ asset('css/config/print.css') }}">
-
+<link rel="stylesheet" href="{{ asset('fileinput/css/fileinput.css') }}">
 @section('title')
     @yield('page-title')
 @endsection
 @section('content_header')
     @include('includes.alerts')
 @endsection
-
 <script src="{{ asset('config/main.js') }}"></script>
 <script src="{{ asset('js/libs/jquery.js') }}"></script>
+<script src="{{ asset('fileinput/js/fileinput.js') }}"></script>
 <script src="{{ asset('js/libs/print.js') }}"></script>
 <script src="{{ asset('js/utils/ElementProperty.js') }}"></script>
 <script src="{{ asset('js/service/Session.js') }}"></script>

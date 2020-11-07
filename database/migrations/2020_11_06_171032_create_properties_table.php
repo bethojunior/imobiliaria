@@ -20,11 +20,12 @@ class CreatePropertiesTable extends Migration
             $table->integer('city_id');
             $table->integer('neighborhood_id');
             $table->longText('description');
+            $table->longText('title');
+            $table->longText('sub_title');
             $table->longText('address');
             $table->longText('location');
             $table->float('value');
             $table->float('value_additional');
-            $table->longText('images');
             $table->timestamps();
         });
     }

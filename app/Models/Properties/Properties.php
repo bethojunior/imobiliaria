@@ -12,7 +12,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Properties extends Model
 {
-    protected $fillable = ['acquisition_id','model_id','city_id','neighborhood_id','description','address','location','value','value_additional','images'];
+    protected $fillable = ['title','sub_title','acquisition_id','model_id','city_id','neighborhood_id','description','address','location','value','value_additional'];
 
     /**
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
@@ -44,5 +44,13 @@ class Properties extends Model
     public function neighborhood()
     {
         return $this->hasMany(Neighborhood::class,'id','neighborhood_id');
+    }
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function images()
+    {
+        return $this->hasMany(ImagesProperties::class,'property_id','id');
     }
 }
