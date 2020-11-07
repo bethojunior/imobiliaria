@@ -222,8 +222,17 @@ return [
         ],
         [
             'text'        => 'Configurações do site',
-            'url'         => '#',
             'icon'        => 'fas fa-fw fa-home',
+            'submenu' => [
+                [
+                    'text' => 'Modelos de imoveis',
+                    'url'  => 'models',
+                ],
+                [
+                    'text' => 'Tipos de vendas',
+                    'url'  => 'acquisition',
+                ],
+            ]
         ],
         [
             'text'        => 'Localidade',
@@ -239,6 +248,7 @@ return [
                 ]
             ]
         ],
+
         [
             'text'        => 'Imoveis',
             'icon'        => 'fas fa-fw fa-home',
