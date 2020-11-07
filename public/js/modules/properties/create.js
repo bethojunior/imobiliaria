@@ -1,6 +1,6 @@
 $('.js-example-basic-single').select2();
 Mask.setMoneyField('.value')
-
+$('.collapse').collapse()
 
 elementProperty.addEventInElement('#city','onchange',function (){
     let city_id = this.value;

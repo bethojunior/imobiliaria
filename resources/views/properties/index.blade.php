@@ -9,12 +9,40 @@
 
 @section('content')
     @include('includes.alerts')
-    {{ $properties }}
-    @foreach($properties as $property)
-{{--        <iframe src="{{ $property->location }}"></iframe>--}}
-    @endforeach
+    <div class="row col-lg-12">
+        @foreach($properties as $property)
+            <div class="row col-lg-12 card">
+                {{ $property->title }}
+                <div class="accordion" id="accordionExample">
+                    @foreach($property->images as $images)
+                        <div class="card">
+                            <div class="card-header" id="headingThree{{$images->id}}">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree{{$images->id}}" aria-expanded="false" aria-controls="collapseThree{{$images->id}}">
+                                        Collapsible Group Item #3
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseThree{{$images->id}}" class="collapse" aria-labelledby="headingThree{{$images->id}}" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <img src="{{ url('storage/').'/'.$images->image }}" >
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
+            </div>
+        @endforeach
+    </div>
+
+
 @stop
 
 @section('js')
-    <script src="{{ asset('js/modules/cashier/init.js') }}"></script>
+
+    <script src="{{ asset('js/modules/properties/create.js') }}"></script>
 @endsection
+
+
+
+
