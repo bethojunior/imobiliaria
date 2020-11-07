@@ -255,11 +255,11 @@ return [
             'submenu' => [
                 [
                     'text' => 'Inserir',
-                    'url'  => 'home/blog',
+                    'url'  => 'properties/create',
                 ],
                 [
                     'text' => 'Listar',
-                    'url'  => 'home/listBlog',
+                    'url'  => 'properties',
                 ]
             ]
         ],

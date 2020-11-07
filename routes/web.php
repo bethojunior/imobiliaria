@@ -47,6 +47,14 @@ Route::group(['middleware' => 'auth'], function () {
         });
     });
 
+
+    Route::group(['prefix' => 'properties'], function () {
+        Route::group(['as' => 'properties'], function () {
+            Route::get('create', 'Properties\PropertiesController@index')->name('.index');
+            Route::post('', 'Properties\PropertiesController@create')->name('.create');
+        });
+    });
+
 });
 
 

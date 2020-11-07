@@ -15,7 +15,7 @@ class CreatePropertiesTable extends Migration
     {
         Schema::create('properties', function (Blueprint $table) {
             $table->id();
-            $table->integer('type_acquisition');
+            $table->integer('acquisition_id');
             $table->integer('model_id');
             $table->integer('city_id');
             $table->integer('neighborhood_id');
@@ -24,6 +24,7 @@ class CreatePropertiesTable extends Migration
             $table->longText('location');
             $table->float('value');
             $table->float('value_additional');
+            $table->longText('images');
             $table->timestamps();
         });
     }

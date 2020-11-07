@@ -1,50 +1,41 @@
 <?php
 
 
-namespace App\Services\Neighborhood;
+namespace App\Services\Properties;
 
-
-use App\Models\Neighborhood\Neighborhood;
-use App\Repositories\Cities\CitiesRepository;
-use App\Repositories\Neighborhood\NeighborhoodRepository;
+use App\Models\Properties\Properties;
+use App\Repositories\Properties\PropertiesRepository;
 use Illuminate\Support\Facades\DB;
 
-class NeighborhoodService
+class PropertiesService
 {
     private $repository;
 
     /**
-     * CitiesService constructor.
-     * @param CitiesRepository $repository
+     * PropertiesService constructor.
+     * @param PropertiesRepository $propertiesRepository
      */
-    public function __construct(NeighborhoodRepository $repository)
+    public function __construct(PropertiesRepository $propertiesRepository)
     {
-        $this->repository = $repository;
-    }
-
-    /**
-     * @return \Illuminate\Database\Eloquent\Builder[]|\Illuminate\Database\Eloquent\Collection|\Illuminate\Database\Eloquent\Model[]
-     */
-    public function getAll(){
-        return $this->repository->findAll();
+        $this->repository = $propertiesRepository;
     }
 
     /**
      * @return \Illuminate\Database\Eloquent\Collection|\Illuminate\Database\Eloquent\Model[]
      */
-    public function findall(){
+    public function getAll(){
         return $this->repository->all();
     }
 
     /**
      * @param array $request
-     * @return Neighborhood
+     * @return Properties
      */
     public function insert(array $request)
     {
-        $insert = new Neighborhood($request);
-        $this->repository->save($insert);
-        return $insert;
+        $properties = new Properties($request);
+        $this->repository->save($properties);
+        return $properties;
     }
 
     /**
@@ -66,4 +57,5 @@ class NeighborhoodService
 
         return $result;
     }
+
 }
