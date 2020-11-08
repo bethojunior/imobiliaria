@@ -53,11 +53,9 @@
 
 <div class="row">
 
-
-    @foreach( $acquisitions as $acquisition )
-
-        @foreach( $properties as $property )
-        @if($acquisition->id == $property->acquisition_id)
+    @foreach( $properties as $property )
+        @foreach( $acquisitions as $acquisition )
+            @if($acquisition->id == $property->acquisition_id)
                 <div class="col l12 s12 m12 type-sale">
                     <div class="center">
                         <h4 class="main-color">
@@ -73,14 +71,12 @@
                             <div class="slider">
                                 <ul class="slides">
                                     @foreach($property->images as $images)
-
                                         <li>
                                             <img src="{{ url('storage/').'/'.$images->image }}"> <!-- random image -->
                                             <div class="caption center-align">
                                             </div>
                                         </li>
                                     @endforeach
-
                                 </ul>
                             </div>
                             <a class="btn-floating halfway-fab waves-effect waves-light red modal-sales"><i class="fa fa-eye" aria-hidden="true"></i></a>
@@ -97,9 +93,6 @@
             @endif
         @endforeach
     @endforeach
-
-
-
 </div>
 
 

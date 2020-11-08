@@ -8,6 +8,7 @@ use App\Contracts\Repository\AbstractRepository;
 use App\Models\Properties\Properties;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Support\Facades\DB;
 
 class PropertiesRepository extends AbstractRepository
 {
@@ -23,13 +24,10 @@ class PropertiesRepository extends AbstractRepository
     {
         return $this->getModel()
             ::with('city')
-            ->with(['acquisition' => function(HasMany $query){
-                $query->groupBy('id');
-            }])
+            ->with('acquisition')
             ->with('neighborhood')
             ->with('model')
             ->with('images')
-            ->orderByDesc('id')
             ->get();
     }
 }
