@@ -10,38 +10,75 @@
 @section('content')
     @include('includes.alerts')
     <div class="row col-lg-12">
-        @foreach($properties as $property)
-            <div class="row col-lg-12 card">
-                <p>Titulo : {{ $property->title }}</p>
-                <p>Sub Titulo : {{ $property->sub_title }}</p>
-                <p>Valor: {{ $property->value }}</p>
-                <p>Valor Adicional: {{ $property->value_additional }}</p>
-                <p>Criado: {{ Carbon\Carbon::parse($property->created_at )->format('d/m/Y') }}</p>
-                <p>Cidade : {{ $property->city['0']['name'] }}</p>
-                <p>Bairro : {{ $property->neighborhood['0']['name'] }}</p>
-                <p>Tipo : {{ $property->acquisition['0']['name'] }}</p>
-                <p>Modelo : {{ $property->model['0']['name'] }}</p>
-                <p>Endereço : {{ $property->address }}</p>
-                <div class="accordion" id="accordionExample">
-                    @foreach($property->images as $images)
-                        <div class="card">
-                            <div class="card-header" id="headingThree{{$images->id}}">
-                                <h2 class="mb-0">
-                                    <button class="btn btn-link btn-block text-left " type="button" data-toggle="collapse" data-target="#collapseThree{{$images->id}}" aria-expanded="false" aria-controls="collapseThree{{$images->id}}">
-                                        Imagem {{ $images->id }}
-                                    </button>
-                                </h2>
+        <div class="accordion col-lg-12" id="accordionExample">
+            @foreach($properties as $property)
+                <div class="row col-lg-12 card">
+                    <div class="card-header" id="heading{{$property->id}}">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left " type="button" data-toggle="collapse" data-target="#collapse{{$property->id}}" aria-expanded="false" aria-controls="collapse{{$property->id}}">
+                                {{ $property->title }} - Criado: {{ Carbon\Carbon::parse($property->created_at )->format('d/m/Y') }}
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapse{{$property->id}}" class="collapse" aria-labelledby="heading{{$property->id}}" data-parent="#accordionExample">
+                        <div class="card-body row col-lg-12">
+                            <div class="form-group col-lg-2">
+                                <span>Titulo</span>
+                                <input class="form-control" type="text" disabled value="{{ $property->title }}">
                             </div>
-                            <div id="collapseThree{{$images->id}}" class="collapse" aria-labelledby="headingThree{{$images->id}}" data-parent="#accordionExample">
-                                <div class="card-body">
-                                    <img src="{{ url('storage/').'/'.$images->image }}" >
-                                </div>
+                            <div class="form-group col-lg-2">
+                                <span>Sub Titulo</span>
+                                <input class="form-control" type="text" disabled value="{{ $property->sub_title }}">
+                            </div>
+                            <div class="form-group col-lg-2">
+                                <span>Valor</span>
+                                <input class="form-control" type="text" disabled value="R$ {{ $property->value }}">
+                            </div>
+                            <div class="form-group col-lg-2">
+                                <span>Valor adicional</span>
+                                <input class="form-control" type="text" disabled value="R$ {{ $property->value_additional }}">
+                            </div>
+                            <div class="form-group col-lg-2">
+                                <span>Criado</span>
+                                <input class="form-control" type="text" disabled value="{{ Carbon\Carbon::parse($property->created_at )->format('d/m/Y') }}">
+                            </div>
+                            <div class="form-group col-lg-2">
+                                <span>Cidade</span>
+                                <input class="form-control" type="text" disabled value="{{ $property->city['0']['name'] }}">
+                            </div>
+                            <div class="form-group col-lg-2">
+                                <span>Bairro</span>
+                                <input class="form-control" type="text" disabled value="{{ $property->neighborhood['0']['name'] }}">
+                            </div>
+                            <div class="form-group col-lg-2">
+                                <span>Tipo</span>
+                                <input class="form-control" type="text" disabled value="{{ $property->acquisition['0']['name'] }}">
+                            </div>
+                            <div class="form-group col-lg-2">
+                                <span>Modelo</span>
+                                <input class="form-control" type="text" disabled value="{{ $property->model['0']['name'] }}">
+                            </div>
+                            <div class="form-group col-lg-3">
+                                <span>Endereço</span>
+                                <input class="form-control" type="text" disabled value="{{ $property->address}}">
+                            </div>
+                            <div class="col-lg-12">
+                                <span>Localização</span>
+                                <iframe style="height: 20vw" class="form-control" src="{{ $property->location }}"></iframe>
+                            </div>
+                            <div class="row col-lg-12 form-group" style="padding-top: 1vw">
+                                @foreach($property->images as $images)
+                                    <div class="col-lg-2">
+                                        <img class="col-lg-12" src="{{ url('storage/').'/'.$images->image }}">
+                                    </div>
+                                @endforeach
                             </div>
                         </div>
-                    @endforeach
+                    </div>
+
                 </div>
-            </div>
-        @endforeach
+            @endforeach
+        </div>
     </div>
 
 

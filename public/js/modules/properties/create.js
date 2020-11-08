@@ -1,6 +1,7 @@
 $('.js-example-basic-single').select2();
 Mask.setMoneyField('.value')
 $('.collapse').collapse()
+$('.carousel').carousel()
 
 elementProperty.addEventInElement('#city','onchange',function (){
     let city_id = this.value;
