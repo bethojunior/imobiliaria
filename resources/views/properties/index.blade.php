@@ -16,7 +16,7 @@
                     <div class="card-header" id="heading{{$property->id}}">
                         <h2 class="mb-0">
                             <button class="btn btn-link btn-block text-left " type="button" data-toggle="collapse" data-target="#collapse{{$property->id}}" aria-expanded="false" aria-controls="collapse{{$property->id}}">
-                                {{ $property->title }} - Criado: {{ Carbon\Carbon::parse($property->created_at )->format('d/m/Y') }}
+                                {{ $property->title }} - {{ $property->city['0']['name'] }}  -  Criado: {{ Carbon\Carbon::parse($property->created_at )->format('d/m/Y') }}
                             </button>
                         </h2>
                     </div>
@@ -68,8 +68,8 @@
                             </div>
                             <div class="row col-lg-12 form-group" style="padding-top: 1vw">
                                 @foreach($property->images as $images)
-                                    <div class="col-lg-2">
-                                        <img class="col-lg-12" src="{{ url('storage/').'/'.$images->image }}">
+                                    <div class="card col-lg-2">
+                                        <img src="{{ url('storage/').'/'.$images->image }}" class="card-img-top" alt="...">
                                     </div>
                                 @endforeach
                             </div>
