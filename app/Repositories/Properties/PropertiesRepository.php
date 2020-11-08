@@ -23,7 +23,9 @@ class PropertiesRepository extends AbstractRepository
     {
         return $this->getModel()
             ::with('city')
-            ->with('acquisition')
+            ->with(['acquisition' => function(HasMany $query){
+                $query->groupBy('id');
+            }])
             ->with('neighborhood')
             ->with('model')
             ->with('images')

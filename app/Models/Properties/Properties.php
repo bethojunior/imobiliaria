@@ -27,7 +27,7 @@ class Properties extends Model
      */
     public function acquisition()
     {
-        return $this->hasMany(Acquisition::class,'id','city_id');
+        return $this->hasMany(Acquisition::class,'id','acquisition_id');
     }
 
     /**
