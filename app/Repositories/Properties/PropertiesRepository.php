@@ -28,6 +28,7 @@ class PropertiesRepository extends AbstractRepository
             ->with('neighborhood')
             ->with('model')
             ->with('images')
+            ->groupBy('acquisition_id')
             ->get();
     }
 }
