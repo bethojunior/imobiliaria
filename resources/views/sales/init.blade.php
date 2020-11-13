@@ -5,35 +5,34 @@
     </div>
     <div class="input-field col l2 s12 m12">
         <select>
-            <option value="1">Vendas</option>
-            <option value="2">Locação</option>
-            <option value="3">Lançamentos</option>
+            @foreach($models as $model)
+                <option value="{{ $model->id }}">{{ $model->name }}</option>
+            @endforeach
         </select>
         <label>Tipo</label>
     </div>
     <div class="input-field col l2 s12 m12">
         <select>
-            <option value="1">Apartamento</option>
-            <option value="2">Casa</option>
-            <option value="3">Condominio</option>
+            @foreach($acquisitions as $acquisition)
+                <option value="{{ $acquisition->id }}">{{ $acquisition->name }}</option>
+            @endforeach
         </select>
         <label>Modelo</label>
     </div>
     <div class="input-field col l2 s12 m12">
         <select>
-            <option value="1">Juazeiro do Norte</option>
-            <option value="2">Barbalha</option>
-            <option value="3">Crato</option>
-            <option value="3">Milagres</option>
+            @foreach($cities as $city)
+                <option value="{{ $city->id }}">{{ $city->name }}</option>
+            @endforeach
         </select>
         <label>Cidade</label>
     </div>
     <div class="input-field col l2 s12 m12">
         <select>
             <option value="0">Escolha a cidade</option>
-            <option value="1">Pedrinhas</option>
-            <option value="2">Centro</option>
-            <option value="3">Bairro de Fátima</option>
+            @foreach($neighborhoods as $neighborhood)
+                <option value="{{ $neighborhood->id }}">{{ $neighborhood->name }}</option>
+            @endforeach
         </select>
         <label>Bairro</label>
     </div>

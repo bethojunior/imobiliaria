@@ -15,6 +15,8 @@
 <meta name="application-name" content="PWA">
 <link rel="icon" sizes="512x512" href="{{ asset('assets/images/logo/icon.png') }}">
 
+<title>Imobiliária Rafael Ferreira</title>
+
 <!-- Add to homescreen for Safari on iOS -->
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
