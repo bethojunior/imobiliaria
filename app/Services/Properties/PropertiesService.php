@@ -3,6 +3,7 @@
 
 namespace App\Services\Properties;
 
+use App\Constants\SaleConstants;
 use App\Models\Properties\ImagesProperties;
 use App\Models\Properties\Properties;
 use App\Repositories\Properties\ImagePropertyRepository;
@@ -39,39 +40,33 @@ class PropertiesService
      */
     public function insert(array $request)
     {
-        try{
-            $data = [
-                'title'  => $request['title'],
-                'sub_title'  => $request['sub_title'],
-                'description' => $request['description'],
-                'acquisition_id' => $request['acquisition_id'],
-                'model_id' => $request['model_id'],
-                'city_id' => $request['city_id'],
-                'neighborhood_id' => $request['neighborhood_id'],
-                'address' => $request['address'],
-                'location' => $request['location'],
-                'value' => $request['value'],
-                'value_additional' => $request['value_additional'],
-            ];
-            $properties = new Properties($data);
-            $result = $this->repository->save($properties);
-
-            if (isset($request['images'])) {
-                foreach ($request['images'] as $image){
-                    $filename = Storage::disk('public')->putFile($properties->id, $image);
-                    $images = [
-                        'image' => $filename,
-                        'property_id' => $properties->id,
-                    ];
-                    $imageTicket = new ImagesProperties($images);
-                    $this->imageRepository->save($imageTicket);
-                }
+        $data = [
+            'title'  => $request['title'],
+            'sub_title'  => $request['sub_title'],
+            'description' => $request['description'],
+            'acquisition_id' => $request['acquisition_id'],
+            'model_id' => $request['model_id'],
+            'city_id' => $request['city_id'],
+            'neighborhood_id' => $request['neighborhood_id'],
+            'address' => $request['address'],
+            'location' => $request['location'],
+            'value' => $request['value'],
+            'value_additional' => $request['value_additional'],
+            'status' => SaleConstants::OPEN
+        ];
+        $properties = new Properties($data);
+        $insert = $this->repository->save($properties);
+        if (isset($request['images'])) {
+            foreach ($request['images'] as $image){
+                $filename = Storage::disk('public')->putFile($properties->id, $image);
+                $images = [
+                    'image' => $filename,
+                    'property_id' => $properties->id,
+                ];
+                $imageTicket = new ImagesProperties($images);
+                $this->imageRepository->save($imageTicket);
             }
-        }catch (\Exception $exception){
-            return $exception;
         }
-
-        return true;
     }
 
     /**

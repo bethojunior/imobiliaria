@@ -24,8 +24,9 @@ class CreatePropertiesTable extends Migration
             $table->longText('sub_title');
             $table->longText('address');
             $table->longText('location');
-            $table->float('value');
-            $table->float('value_additional');
+            $table->string('value');
+            $table->string('value_additional');
+            $table->string('status');
             $table->timestamps();
         });
     }

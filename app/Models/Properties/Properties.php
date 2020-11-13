@@ -12,7 +12,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Properties extends Model
 {
-    protected $fillable = ['title','sub_title','acquisition_id','model_id','city_id','neighborhood_id','description','address','location','value','value_additional'];
+    protected $fillable = ['title','sub_title','acquisition_id','model_id','city_id','neighborhood_id','description','address','location','value','value_additional','status'];
 
     /**
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
