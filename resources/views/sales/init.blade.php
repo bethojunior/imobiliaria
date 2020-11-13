@@ -72,8 +72,8 @@
                                 <ul class="slides">
                                     @foreach($property->images as $images)
                                         <li>
-                                            <img src="{{ url('storage/').'/'.$images->image }}"> <!-- random image -->
-                                            <div class="caption center-align">
+                                            <img src="{{asset('storage/').'/'.$images->image }}">
+                                            <div class="caption  asset('storage/').center-align">
                                             </div>
                                         </li>
                                     @endforeach
