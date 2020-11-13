@@ -8,6 +8,7 @@ use App\Models\Properties\Properties;
 use App\Repositories\Properties\ImagePropertyRepository;
 use App\Repositories\Properties\PropertiesRepository;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Storage;
 
 class PropertiesService
 {
@@ -57,7 +58,7 @@ class PropertiesService
 
             if (isset($request['images'])) {
                 foreach ($request['images'] as $image){
-                    $filename = \Storage::disk('public')->putFile($properties->id, $image);
+                    $filename = Storage::disk('public')->putFile($properties->id, $image);
                     $images = [
                         'image' => $filename,
                         'property_id' => $properties->id,

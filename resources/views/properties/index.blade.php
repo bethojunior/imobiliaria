@@ -69,7 +69,7 @@
                             <div class="row col-lg-12 form-group" style="padding-top: 1vw">
                                 @foreach($property->images as $images)
                                     <div class="card col-lg-2">
-                                        <img src="{{asset('storage/').'/'.$images->image }}" class="card-img-top" alt="...">
+                                        <img src="{{ asset('storage/').'/'.$images->image }}" class="card-img-top" alt="...">
                                     </div>
                                 @endforeach
                             </div>
