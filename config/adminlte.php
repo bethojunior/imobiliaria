@@ -14,7 +14,7 @@ return [
     |
     */
 
-    'title' => 'PDV - Madgic',
+    'title' => 'Imobiliária',
     'title_prefix' => '',
     'title_postfix' => '',
 
@@ -45,8 +45,8 @@ return [
     |
     */
 
-    'logo' => '<b>PDV - </b> Madgic',
-    'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
+    'logo' => '<b>Imobiliária </b>',
+    'logo_img' => '/assets/images/logo/logo.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
     'logo_img_xl_class' => 'brand-image-xs',
