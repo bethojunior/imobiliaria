@@ -55,7 +55,9 @@ class PropertiesService
             'status' => SaleConstants::OPEN
         ];
         $properties = new Properties($data);
+
         $insert = $this->repository->save($properties);
+
         if (isset($request['images'])) {
             foreach ($request['images'] as $image){
                 $filename = Storage::disk('public')->putFile($properties->id, $image);
