@@ -51,7 +51,7 @@
 
 
 <div class="row">
-
+    {{ $properties }}
     @foreach( $properties as $property )
         @foreach( $acquisitions as $acquisition )
             @if($acquisition->id == $property->acquisition_id)
