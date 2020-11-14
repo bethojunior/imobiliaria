@@ -59,7 +59,7 @@
                     <div class="center">
                         <h4 class="main-color">
                             <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                            {{ $acquisition->name }}
+                                {{ $acquisition->name }}
                             <i class="fa fa-angle-double-left" aria-hidden="true"></i>
                         </h4>
                     </div>
