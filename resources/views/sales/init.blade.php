@@ -63,32 +63,32 @@
         </div>
         @foreach( $properties as $property )
             @if($property->acquisition_id == $acquisition->id)
-                            <div class="col s12 l4">
-                                <div class="card">
-                                    <div class="card-image">
-                                        <div class="slider">
-                                            <ul class="slides">
-                                                @foreach($property->images as $images)
-                                                    <li>
-                                                        <img src="{{ asset('storage/').'/'.$images->image }}">
-                                                        <div class="caption center-align">
+                <div class="col s12 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <div class="slider">
+                                <ul class="slides">
+                                    @foreach($property->images as $images)
+                                        <li>
+                                            <img src="{{ asset('storage/').'/'.$images->image }}">
+                                            <div class="caption center-align">
 
-                                                        </div>
-                                                    </li>
-                                                @endforeach
-                                            </ul>
-                                        </div>
-                                        <a class="btn-floating halfway-fab waves-effect waves-light red modal-sales"><i class="fa fa-eye" aria-hidden="true"></i></a>
-                                    </div>
-                                    <div class="card-content">
-                                        <span class="card-title">{{ $property->title }}</span>
-                                        <label>{{ $property->sub_title }}</label>
-                                        <p>
-                                            {{ $property->description }}
-                                        </p>
-                                    </div>
-                                </div>
+                                            </div>
+                                        </li>
+                                    @endforeach
+                                </ul>
                             </div>
+                            <a class="btn-floating halfway-fab waves-effect waves-light red modal-sales"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">{{ $property->title }}</span>
+                            <label>{{ $property->sub_title }}</label>
+                            <p>
+                                {{ $property->description }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
             @endif
 
         @endforeach

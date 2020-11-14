@@ -1,6 +1,8 @@
 $('.js-example-basic-single').select2();
 Mask.setMoneyField('.value')
-$('.collapse').collapse()
+$('.collapse').collapse({
+    toggle: false
+})
 $('.carousel').carousel()
 
 elementProperty.addEventInElement('#city','onchange',function (){
@@ -21,6 +23,19 @@ elementProperty.addEventInElement('#city','onchange',function (){
                 `;
             }).join('');
             these.innerHTML = content;
-        });
+        });return swal('Erro ao deletar alert(id); imóvel','Contate o suporte','error');
+    })
+})
+
+elementProperty.addEventInElement('.disable-property','onclick',function (){
+    let id = this.getAttribute('id');
+    SwalCustom.dialogConfirm('Deseja deletar esse imovel?','Essa ação é irreversivel',status => {
+        if(!status)
+            return true;
+        PropertyController.delete(id).then(response => {
+            if(response.status)
+                return swal('Imóvel deletado com sucesso','','success');
+            return swal('Erro ao deletar alert(id); imóvel','Contate o suporte','error');
+        })
     })
 })

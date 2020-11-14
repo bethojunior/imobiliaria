@@ -91,4 +91,16 @@ class PropertiesService
         return $result;
     }
 
+    /**
+     * @param $id
+     * @return \Illuminate\Database\Eloquent\Builder|\Illuminate\Database\Eloquent\Builder[]|\Illuminate\Database\Eloquent\Collection|\Illuminate\Database\Eloquent\Model|null
+     */
+    public function updateStatus($id)
+    {
+        $test = $this->repository->find($id);
+        $test->status = SaleConstants::CLOSED;
+        $this->repository->save($test);
+        return $test;
+    }
+
 }

@@ -4,6 +4,7 @@
 namespace App\Repositories\Properties;
 
 
+use App\Constants\SaleConstants;
 use App\Contracts\Repository\AbstractRepository;
 use App\Models\Properties\Properties;
 use Carbon\Carbon;
@@ -18,9 +19,10 @@ class PropertiesRepository extends AbstractRepository
     }
 
     /**
+     * @param string $status
      * @return \Illuminate\Database\Eloquent\Builder[]|\Illuminate\Database\Eloquent\Collection|\Illuminate\Database\Eloquent\Model[]
      */
-    public function findall()
+    public function findall($status = SaleConstants::OPEN)
     {
         return $this->getModel()
             ::with('city')
@@ -28,7 +30,7 @@ class PropertiesRepository extends AbstractRepository
             ->with('neighborhood')
             ->with('model')
             ->with('images')
-//            ->groupByRaw('acquisition_id')
+            ->where('status','=',$status)
             ->get();
     }
 }

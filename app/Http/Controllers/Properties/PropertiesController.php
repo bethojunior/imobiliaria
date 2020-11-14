@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Properties;
 
 
 use App\Http\Controllers\Controller;
+use App\Http\Responses\ApiResponse;
 use App\Services\Acquisition\AcquisitionService;
 use App\Services\Cities\CitiesService;
 use App\Services\Models\ModelsService;
@@ -83,6 +84,21 @@ class PropertiesController extends Controller
         $properties = $this->service
             ->getAll();
         return view('properties.index')->with(['properties' => $properties]);
+    }
+
+    /**
+     * @param $id
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function update($id)
+    {
+        try{
+            $this->service
+                ->updateStatus($id);
+        }catch (\Exception $exception){
+            return ApiResponse::error('',$exception->getMessage());
+        }
+        return ApiResponse::success('','Status alterado com sucesso');
     }
 
 }
