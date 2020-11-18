@@ -19,7 +19,9 @@
 }
 .row.col.l12.m12.s12.cotainer .row.col.l8.s12.m12 .col.s12.m12.l6 .card .card-image .slider .slides li:hover{
     cursor: pointer;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0px 0px 24px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 24px -4px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 24px -4px rgba(0,0,0,0.75);
     transition: 1s;
 }
 .row.col.l12.s12.m12.filter:hover{
