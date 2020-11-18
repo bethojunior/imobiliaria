@@ -13,6 +13,13 @@ function getEnvironment(){
                 api : 'https://imobiliaria.madgic.com.br/api/',
             }
         },
+        {
+            name: "http://rafaelferreiraimoveis.com/",
+            hosts : {
+                web : 'http://rafaelferreiraimoveis.com/',
+                api : 'http://rafaelferreiraimoveis.com/api/',
+            }
+        },
 
     ];
 
