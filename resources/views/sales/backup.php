@@ -4,33 +4,47 @@
 
 <div class="row col l12 m12 s12 cotainer">
     <div class="row col l8 s12 m12">
+        @foreach( $acquisitions as $acquisition )
+        <div class="col l12 s12 m12 type-sale">
+            <div class="center">
+                <h4 class="main-color">
+                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    {{ $acquisition->name }}
+                    <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+                </h4>
+            </div>
+        </div>
         @foreach( $properties as $property )
-            <div class="col s12 l6">
-                    <div class="card">
-                        <div class="card-image">
-                            <div class="slider">
-                                <ul class="slides">
-                                    @foreach($property->images as $images)
-                                        <li>
-                                            <img src="{{ asset('storage/').'/'.$images->image }}">
-                                            <div class="caption center-align">
+        @if($property->acquisition_id == $acquisition->id)
+        <div class="col s12 l6">
+            <div class="card">
+                <div class="card-image">
+                    <div class="slider">
+                        <ul class="slides">
+                            @foreach($property->images as $images)
+                            <li>
+                                <img src="{{ asset('storage/').'/'.$images->image }}">
+                                <div class="caption center-align">
 
-                                            </div>
-                                        </li>
-                                    @endforeach
-                                </ul>
-                            </div>
-                            <a class="btn-floating halfway-fab waves-effect waves-light red modal-sales"><i class="fa fa-eye" aria-hidden="true"></i></a>
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title">{{ $property->title }}</span>
-                            <label>{{ $property->sub_title }}</label>
-                            <p>
-                                {{ $property->description }}
-                            </p>
-                        </div>
+                                </div>
+                            </li>
+                            @endforeach
+                        </ul>
                     </div>
+                    <a class="btn-floating halfway-fab waves-effect waves-light red modal-sales"><i class="fa fa-eye" aria-hidden="true"></i></a>
                 </div>
+                <div class="card-content">
+                    <span class="card-title">{{ $property->title }}</span>
+                    <label>{{ $property->sub_title }}</label>
+                    <p>
+                        {{ $property->description }}
+                    </p>
+                </div>
+            </div>
+        </div>
+        @endif
+
+        @endforeach
         @endforeach
     </div>
     <div class="row col l4 s12 m12 filter">
@@ -40,7 +54,7 @@
         <div class="input-field col l12 s12 m12">
             <select>
                 @foreach($models as $model)
-                    <option value="{{ $model->id }}">{{ $model->name }}</option>
+                <option value="{{ $model->id }}">{{ $model->name }}</option>
                 @endforeach
             </select>
             <label>Tipo</label>
@@ -48,7 +62,7 @@
         <div class="input-field col l12 s12 m12">
             <select>
                 @foreach($acquisitions as $acquisition)
-                    <option value="{{ $acquisition->id }}">{{ $acquisition->name }}</option>
+                <option value="{{ $acquisition->id }}">{{ $acquisition->name }}</option>
                 @endforeach
             </select>
             <label>Modelo</label>
@@ -56,7 +70,7 @@
         <div class="input-field col l12 s12 m12">
             <select>
                 @foreach($cities as $city)
-                    <option value="{{ $city->id }}">{{ $city->name }}</option>
+                <option value="{{ $city->id }}">{{ $city->name }}</option>
                 @endforeach
             </select>
             <label>Cidade</label>
@@ -65,7 +79,7 @@
             <select>
                 <option value="0">Escolha a cidade</option>
                 @foreach($neighborhoods as $neighborhood)
-                    <option value="{{ $neighborhood->id }}">{{ $neighborhood->name }}</option>
+                <option value="{{ $neighborhood->id }}">{{ $neighborhood->name }}</option>
                 @endforeach
             </select>
             <label>Bairro</label>
