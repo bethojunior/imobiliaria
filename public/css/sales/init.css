@@ -11,10 +11,14 @@
     /*margin-top: 5vw;*/
     padding-bottom: 1vw;
 }
+.row.col.l12.m12.s12.cotainer .row.col.l8.s12.m12 .col.s12.m12.l6 .card .card-image .slider .slides li img{
+    transition: 1s;
+}
 .row.col.l12.m12.s12.cotainer .row.col.l8.s12.m12 .col.s12.m12.l6 .card .card-image .slider .slides li img:hover{
     cursor: pointer;
-    width: 110vw;
-}
+    width: 105vw;
+    transition: 1s;
+}hover
 .row.col.l12.s12.m12.filter:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
