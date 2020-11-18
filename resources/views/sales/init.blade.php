@@ -23,8 +23,13 @@
                             <a class="btn-floating halfway-fab waves-effect waves-light red modal-sales"><i class="fa fa-eye" aria-hidden="true"></i></a>
                         </div>
                         <div class="card-content">
-                            <span class="card-title">{{ $property->title }}</span>
-                            <label>{{ $property->sub_title }}</label>
+                            <p class="card-title">{{ $property->title }}</p>
+                            <p><span><i class="material-icons Tiny">location_on</i> {{ $property->address }}</span></p>
+                            <b><p><span>R$ {{ $property->value }}</span></p></b>
+{{--                            <p><label>{{ $property->sub_title }}</label>    </p>--}}
+                            <div class="col l12 m12 s12 p15">
+                                <div class="divider"></div>
+                            </div>
                             <p>
                                 {{ $property->description }}
                             </p>
