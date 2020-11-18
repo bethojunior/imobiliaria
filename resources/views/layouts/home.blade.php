@@ -64,6 +64,14 @@
 <script src="{{ asset('js/service/MainServices.js') }}"></script>
 <script src="{{ asset('js/utils/preloader.js') }}"></script>
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5MJ628YGVV"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-5MJ628YGVV');
+</script>
 
 <script type="text/javascript">
     // Initialize the service worker
