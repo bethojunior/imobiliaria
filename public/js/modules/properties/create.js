@@ -23,7 +23,7 @@ elementProperty.addEventInElement('#city','onchange',function (){
                 `;
             }).join('');
             these.innerHTML = content;
-        });return swal('Erro ao deletar alert(id); imóvel','Contate o suporte','error');
+        });return swal('Erro ao deletar imóvel','Contate o suporte','error');
     })
 })
 

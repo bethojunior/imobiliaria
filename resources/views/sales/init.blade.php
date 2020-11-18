@@ -84,7 +84,9 @@
             <label>Valor</label>
         </div>
         <div class="input-field col l12 s12 m12">
-            <button class=" col l12 s12 m12 btn btn-info">Aplicar</button>
+            <button style="position: relative" class=" col l12 s12 m12 btn btn-info">Buscar &nbsp;&nbsp;&nbsp;
+                <i style="position: absolute" class="material-icons Tyni">search</i>
+            </button>
         </div>
     </div>
 </div>
