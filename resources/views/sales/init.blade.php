@@ -5,7 +5,7 @@
 <div class="row col l12 m12 s12 cotainer">
     <div class="row col l8 s12 m12">
         @foreach( $properties as $property )
-            <div class="col s12 l6">
+            <div class="col s12 m12 l6">
                     <div class="card">
                         <div class="card-image">
                             <div class="slider">
@@ -35,7 +35,7 @@
     </div>
     <div class="row col l4 s12 m12 filter">
         <div class="col l12 s12 m12">
-            <p class="title-card">Filtros</p>
+            <b><p class="title-card">Filtro de imóvel</p></b>
         </div>
         <div class="input-field col l12 s12 m12">
             <select>
