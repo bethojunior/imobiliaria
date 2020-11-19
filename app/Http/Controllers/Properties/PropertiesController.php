@@ -101,4 +101,15 @@ class PropertiesController extends Controller
         return ApiResponse::success('','Status alterado com sucesso');
     }
 
+    /**
+     * @param $id
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function findById($id)
+    {
+        $property = $this->service
+            ->getById($id);
+        return view('properties.id')->with(['property' => $property]);
+    }
+
 }

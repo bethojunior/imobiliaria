@@ -6,6 +6,7 @@ $('select').material_select();
 
 setInterval( () =>{ $('.slider').slider('next');} , 3500)
 
-elementProperty.addEventInElement('.modal-sales','onclick',function (){
-    $('#modal-sale').modal('open');
+elementProperty.addEventInElement('.property','onclick',function (){
+    let id = this.getAttribute('id');
+    window.location.href = '/property/'+id;
 })

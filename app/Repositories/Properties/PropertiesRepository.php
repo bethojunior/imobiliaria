@@ -33,4 +33,20 @@ class PropertiesRepository extends AbstractRepository
             ->where('status','=',$status)
             ->get();
     }
+
+    /**
+     * @param $id
+     * @return \Illuminate\Database\Eloquent\Builder|\Illuminate\Database\Eloquent\Model|object|null
+     */
+    public function findById($id)
+    {
+        return $this->getModel()
+            ::with('city')
+            ->with('acquisition')
+            ->with('neighborhood')
+            ->with('model')
+            ->with('images')
+            ->where('id','=',$id)
+            ->first();
+    }
 }

@@ -5,7 +5,7 @@
 <div class="row col l12 m12 s12 cotainer">
     <div class="row col l8 s12 m12">
         @foreach( $properties as $property )
-            <div class="col s12 m12 l6">
+            <div class="col s12 m12 l6 property" id="{{ $property->id }}">
                     <div class="card">
                         <div class="card-image">
                             <div class="slider">
@@ -20,7 +20,7 @@
                                     @endforeach
                                 </ul>
                             </div>
-                            <a class="btn-floating halfway-fab waves-effect waves-light red modal-sales"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                            <a class="btn-floating halfway-fab waves-effect waves-light red modal-sales property" id="{{ $property->id }}"><i class="fa fa-eye" aria-hidden="true"></i></a>
                         </div>
                         <div class="card-content">
                             <p class="card-title">{{ $property->title }}</p>

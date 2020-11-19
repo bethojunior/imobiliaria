@@ -103,4 +103,13 @@ class PropertiesService
         return $test;
     }
 
+    /**
+     * @param $id
+     * @return \Illuminate\Database\Eloquent\Builder|\Illuminate\Database\Eloquent\Model|object|null
+     */
+    public function getById($id)
+    {
+        return $this->repository->findById($id);
+    }
+
 }
