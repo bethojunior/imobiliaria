@@ -147,7 +147,7 @@
             </p>
         </div>
         <div class="row col l12 m12 s12">
-            <iframe width="100%" src="{{ $property->location }}"></iframe>
+            <iframe height="600vw" width="100%" src="{{ $property->location }}"></iframe>
         </div>
     </div>
 
