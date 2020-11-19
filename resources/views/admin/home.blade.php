@@ -11,7 +11,7 @@
 
 @section('content')
     @include('includes.alerts')
-    ok
+
 @stop
 
 @section('js')
