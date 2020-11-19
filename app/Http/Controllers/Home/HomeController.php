@@ -56,4 +56,21 @@ class HomeController extends Controller
     }
 
 
+
+    public function search(Request $request)
+    {
+        $properties = $this->propertiesService
+            ->searchByFilter($request->all());
+        $acquisitions = $this->acquisitionService
+            ->getAll();
+        $cities = $this->cityService
+            ->getAll();
+        $neighborhoods = $this->neighborhoodService
+            ->getAll();
+        $models = $this->modelsService
+            ->getAll();
+        return view('init.index')->with(['properties' => $properties,'acquisitions' => $acquisitions,'cities' => $cities,'neighborhoods' => $neighborhoods,'models' => $models]);
+    }
+
+
 }

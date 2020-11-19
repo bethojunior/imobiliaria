@@ -49,4 +49,23 @@ class PropertiesRepository extends AbstractRepository
             ->where('id','=',$id)
             ->first();
     }
+
+    /**
+     * @param array $data
+     * @return \Illuminate\Database\Eloquent\Builder[]|\Illuminate\Database\Eloquent\Collection|\Illuminate\Database\Eloquent\Model[]
+     */
+    public function searchByFilter(array $data)
+    {
+        return $this->getModel()
+            ::with('city')
+            ->with('acquisition')
+            ->with('neighborhood')
+            ->with('model')
+            ->with('images')
+            ->where('model_id','=',$data['model_id'])
+            ->where('acquisition_id','=',$data['acquisition_id'])
+            ->where('city_id','=',$data['city_id'])
+            ->where('neighborhood_id','=',$data['neighborhood_id'])
+            ->get();
+    }
 }

@@ -38,12 +38,13 @@
                 </div>
         @endforeach
     </div>
-    <div class="row col l4 s12 m12 filter">
+    <form class="row col l4 s12 m12 filter" method="POST" action="{{ route('property.search') }}">
+        @csrf
         <div class="col l12 s12 m12">
             <b><p class="title-card">Filtro de imóvel</p></b>
         </div>
         <div class="input-field col l12 s12 m12">
-            <select>
+            <select name="model_id">
                 @foreach($models as $model)
                     <option value="{{ $model->id }}">{{ $model->name }}</option>
                 @endforeach
@@ -51,7 +52,7 @@
             <label>Tipo</label>
         </div>
         <div class="input-field col l12 s12 m12">
-            <select>
+            <select name="acquisition_id">
                 @foreach($acquisitions as $acquisition)
                     <option value="{{ $acquisition->id }}">{{ $acquisition->name }}</option>
                 @endforeach
@@ -59,7 +60,7 @@
             <label>Modelo</label>
         </div>
         <div class="input-field col l12 s12 m12">
-            <select>
+            <select name="city_id">
                 @foreach($cities as $city)
                     <option value="{{ $city->id }}">{{ $city->name }}</option>
                 @endforeach
@@ -67,28 +68,27 @@
             <label>Cidade</label>
         </div>
         <div class="input-field col l12 s12 m12">
-            <select>
-                <option value="0">Escolha a cidade</option>
+            <select name="neighborhood_id">
                 @foreach($neighborhoods as $neighborhood)
                     <option value="{{ $neighborhood->id }}">{{ $neighborhood->name }}</option>
                 @endforeach
             </select>
             <label>Bairro</label>
         </div>
+{{--        <div class="input-field col l12 s12 m12">--}}
+{{--            <select name="value">--}}
+{{--                <option value="1">Até R$100.000,00</option>--}}
+{{--                <option value="2">R$100.000,00 à R$300.000,00</option>--}}
+{{--                <option value="3">R$300.000,00 à R$500.000,00</option>--}}
+{{--            </select>--}}
+{{--            <label>Valor</label>--}}
+{{--        </div>--}}
         <div class="input-field col l12 s12 m12">
-            <select>
-                <option value="1">Até R$100.000,00</option>
-                <option value="2">R$100.000,00 à R$300.000,00</option>
-                <option value="3">R$300.000,00 à R$500.000,00</option>
-            </select>
-            <label>Valor</label>
-        </div>
-        <div class="input-field col l12 s12 m12">
-            <button style="position: relative" class=" col l12 s12 m12 btn btn-info">Buscar &nbsp;&nbsp;&nbsp;
+            <button type="submit" style="position: relative" class=" col l12 s12 m12 btn btn-info">Buscar &nbsp;&nbsp;&nbsp;
                 <i style="position: absolute" class="material-icons Tyni">search</i>
             </button>
         </div>
-    </div>
+    </form>
 </div>
 
 

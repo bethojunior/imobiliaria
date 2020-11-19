@@ -61,6 +61,7 @@ Route::group(['middleware' => 'auth'], function () {
 Route::group(['prefix' => 'property'], function () {
     Route::group(['as' => 'property'], function () {
         Route::get('{id}', 'Properties\PropertiesController@findById')->name('.findById');
+        Route::post('', 'Home\HomeController@search')->name('.search');
     });
 });
 

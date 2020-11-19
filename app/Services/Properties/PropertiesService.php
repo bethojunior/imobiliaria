@@ -112,4 +112,12 @@ class PropertiesService
         return $this->repository->findById($id);
     }
 
+    /**
+     * @param array $data
+     * @return \Illuminate\Database\Eloquent\Builder[]|\Illuminate\Database\Eloquent\Collection|\Illuminate\Database\Eloquent\Model[]
+     */
+    public function searchByFilter(array $data)
+    {
+        return $this->repository->searchByFilter($data);
+    }
 }

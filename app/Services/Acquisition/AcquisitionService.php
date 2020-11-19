@@ -59,4 +59,12 @@ class AcquisitionService
 
         return $result;
     }
+
+    /**
+     * @param array $data
+     */
+    public function filter(array $data)
+    {
+
+    }
 }
