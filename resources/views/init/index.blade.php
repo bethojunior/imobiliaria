@@ -53,8 +53,8 @@
                 <label class="mail white-text"><i class="fa fa-envelope-o" aria-hidden="true"></i> contato@madgic.com.br</label>
             </div>
             <div class="col l3 relative">
-                <a target="_blank" class="grey-text text-lighten-3" href="#!"><i class="social fa fa-facebook" aria-hidden="true"></i></a>
-                <a target="_blank" class="grey-text text-lighten-3" href="https://www.instagram.com/imobiliariacanuto/"><i class="social fa fa-instagram" aria-hidden="true"></i></a>
+                <a target="_blank" class="grey-text text-lighten-3" href="https://www.facebook.com/761384800592861/posts/2826210050776982/?d=n"><i class="social fa fa-facebook" aria-hidden="true"></i></a>
+                <a target="_blank" class="grey-text text-lighten-3" href="https://www.instagram.com/rafael_ferreira_imoveis/?hl=pt-br"><i class="social fa fa-instagram" aria-hidden="true"></i></a>
 {{--                <span><i class="fa fa-info-circle" aria-hidden="true"></i> Agora ficou fácil</span>--}}
                 <button class="add-imovel">Anuncie seu imovel conosco</button>
             </div>
