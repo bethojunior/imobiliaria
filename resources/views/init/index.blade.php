@@ -69,7 +69,7 @@
         <div class="row col l12">
             <div class="col l3">&nbsp;</div>
             <div class="col l2">
-                <img class="responsive-img" style="width: 5vw" src="{{ asset('assets/images/logo/icon.png') }}">
+                <a href="/"><img class="responsive-img" style="width: 5vw" src="{{ asset('assets/images/logo/icon.png') }}"></a>
             </div>
             <div class="col l4 relative">
             <a style="margin-left: 1vw" href="">SOBRE NÓS</a>
