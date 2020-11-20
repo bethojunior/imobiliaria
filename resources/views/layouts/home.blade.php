@@ -96,6 +96,9 @@
 <link href="{{ asset('css/nav/index.css') }}" rel="stylesheet">
 <link href="{{ asset('css/sales/init.css') }}" rel="stylesheet">
 
+<a href="https://api.whatsapp.com/send?phone=558899651575&text=Ol%C3%A1.%20vi%20seu%20site%20e%20me%20interessei!" target="_blank" class="btn-floating btn-large waves-effect pulse waves-light btn-whats">
+    <i class="fa fa-whatsapp" aria-hidden="true"></i>
+</a>
 
 @yield('content')
 
