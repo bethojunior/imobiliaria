@@ -129,7 +129,7 @@
         </div>
 
 
-        <div class="col l12 m12 s12">
+        <div class="col l12 m12 s12" style="margin-top: 2vw">
             <div class="row col l12 m12 s12">
                 <div class="card col l8 m12 s12 card-about">
                     <h3>{{ $property->title }}</h3>
