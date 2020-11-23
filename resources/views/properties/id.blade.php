@@ -1,6 +1,7 @@
 @extends('layouts.home')
 
 @section('content')
+    <link href="{{ asset('css/property/id.css') }}" rel="stylesheet" >
     <!-- nav mobile -->
     <ul id="slide-out" class="side-nav  mobile-only">
         <li>
@@ -113,41 +114,60 @@
 
         {{--        </div>--}}
     </nav>
-    <div class="slider">
-        <ul class="slides">
-            @foreach($property->images as $image)
-                <li>
-                    <img src="{{ asset('storage/').'/'.$image->image }}">
-                    <div class="caption center-align">
+
+    <div style="background-color: #E9E9E9">
+        <div class="slider">
+            <ul class="slides">
+                @foreach($property->images as $image)
+                    <li>
+                        <img src="{{ asset('storage/').'/'.$image->image }}">
+                        <div class="caption center-align">
+                        </div>
+                    </li>
+                @endforeach
+            </ul>
+        </div>
+
+
+        <div class="col l12 m12 s12">
+            <div class="row col l12 m12 s12">
+                <div class="card col l8 m12 s12 card-about">
+                    <h3>{{ $property->title }}</h3>
+                    <div class="progress">
+                        <div class="determinate" style="width: 40%"></div>
                     </div>
-                </li>
-            @endforeach
-        </ul>
-    </div>
+                    <p><label>{{ $property->sub_title }}</label></p>
+                </div>
+            </div>
 
-
-    <div class="row col l12 m12 s12">
-        <div class="col l12 m12 s12 center">
-            <h3>{{ $property->title }}</h3>
-        </div>
-        <div class="col l12 m12 s12 center">
-            <label>{{ $property->sub_title }}</label>
-        </div>
-        <div class="col l12 m12 s12">
-            <span>Cidade : {{ $property->city[0]['name'] }}</span><br/>
-            <span>Bairro : {{ $property->neighborhood[0]['name'] }}</span><br/>
-            <span>Modelo de imóvel : {{ $property->model[0]['name'] }}</span><br/>
-            <span>Imóvel para : {{ $property->acquisition[0]['name'] }}</span><br/>
-            <span>Valor : R$ {{ $property->value }}</span><br/>
-            <span>Valor adicional : R$ {{ $property->value_additional }}</span><br/>
-        </div>
-        <div class="col l12 m12 s12">
-            <p>
-                {{ $property->description }}
-            </p>
-        </div>
-        <div class="row col l12 m12 s12">
-            <iframe height="600vw" width="100%" src="{{ $property->location }}"></iframe>
+            <div class="row col l12 m12 s12">
+                <div class="card col l8 m12 s12 card-about">
+                    <h3>Especificações</h3>
+                    <div class="progress">
+                        <div class="determinate" style="width: 40%"></div>
+                    </div>
+                    <span>Cidade : {{ $property->city[0]['name'] }}</span><br/>
+                    <span>Bairro : {{ $property->neighborhood[0]['name'] }}</span><br/>
+                    <span>Modelo de imóvel : {{ $property->model[0]['name'] }}</span><br/>
+                    <span>Imóvel para : {{ $property->acquisition[0]['name'] }}</span><br/>
+                    <span>Valor : R$ {{ $property->value }}</span><br/>
+                    <span>Valor adicional : R$ {{ $property->value_additional }}</span><br/>
+                </div>
+            </div>
+            <div class="row col l12 m12 s12">
+                <div class="card col l8 m12 s12 card-about">
+                    <h3>Descrição</h3>
+                    <div class="progress">
+                        <div class="determinate" style="width: 40%"></div>
+                    </div>
+                    <span style="text-align: right">
+                        {{ $property->description }}
+                    </span>
+                </div>
+            </div>
+            <div class="row col l12 m12 s12">
+                <iframe height="600vw" width="100%" src="{{ $property->location }}"></iframe>
+            </div>
         </div>
     </div>
 

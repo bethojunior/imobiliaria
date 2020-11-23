@@ -1,0 +1,12 @@
+.card-about{
+    margin-left: 2vw!important;
+}
+.card{
+    padding-bottom: 1vw!important;
+}
+@media screen and (max-width: 992px) {
+    .card-about{
+        margin: 1vw!important;
+        width: 97vw!important;
+    }
+}
