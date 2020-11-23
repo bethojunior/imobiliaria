@@ -165,8 +165,11 @@
                     </span>
                 </div>
             </div>
-            <div class="row col l12 m12 s12">
-                <iframe height="600vw" width="100%" src="{{ $property->location }}"></iframe>
+            <div class="row">
+                <div class="card card-about col l8 m8 s12 maps">
+                    <h3>Localização do imóvel</h3>
+                    <iframe height="600vw" width="100%" src="{{ $property->location }}"></iframe>
+                </div>
             </div>
         </div>
     </div>
